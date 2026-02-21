@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6758a97f-5564-47bb-8d8f-017cb6e69e5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckpts/msvd_lr7e-6/VIT-B-32.pt111.12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extracted_feats/msvd/MSVD_CLIP4Clip_features.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +44,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,11 +57,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ckpts" />
       <recent name="$PROJECT_DIR$/extracted_feats/msrvtt" />
       <recent name="$PROJECT_DIR$/dataset/MSRVTT" />
       <recent name="$PROJECT_DIR$/dataset/MSVD" />
-      <recent name="$PROJECT_DIR$/extracted_feats/msvd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Result" />
@@ -288,7 +286,7 @@
       <workItem from="1765685175890" duration="2084000" />
       <workItem from="1769056995634" duration="11699000" />
       <workItem from="1769244074528" duration="4205000" />
-      <workItem from="1771669007321" duration="5607000" />
+      <workItem from="1771669007321" duration="9040000" />
     </task>
     <servers />
   </component>
