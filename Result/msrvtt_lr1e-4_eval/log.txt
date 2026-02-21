@@ -1,0 +1,2238 @@
+2026-02-21 18:23:15,190:INFO: Effective parameters:
+2026-02-21 18:23:15,190:INFO:   <<< batch_size: 512
+2026-02-21 18:23:15,190:INFO:   <<< batch_size_val: 128
+2026-02-21 18:23:15,190:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 18:23:15,190:INFO:   <<< cache_dir: 
+2026-02-21 18:23:15,190:INFO:   <<< cluster: True
+2026-02-21 18:23:15,190:INFO:   <<< coef_lr: 0.1
+2026-02-21 18:23:15,190:INFO:   <<< contrast: True
+2026-02-21 18:23:15,190:INFO:   <<< d_model: 512
+2026-02-21 18:23:15,190:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 18:23:15,190:INFO:   <<< datatype: msrvtt
+2026-02-21 18:23:15,190:INFO:   <<< decoder_model: decoder-base
+2026-02-21 18:23:15,190:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 18:23:15,190:INFO:   <<< diffusion: False
+2026-02-21 18:23:15,190:INFO:   <<< diffusion_model: diffusion-base
+2026-02-21 18:23:15,190:INFO:   <<< diffusion_steps: 1000
+2026-02-21 18:23:15,190:INFO:   <<< do_eval: True
+2026-02-21 18:23:15,190:INFO:   <<< do_lower_case: True
+2026-02-21 18:23:15,190:INFO:   <<< do_train: False
+2026-02-21 18:23:15,190:INFO:   <<< epochs: 50
+2026-02-21 18:23:15,190:INFO:   <<< feature_framerate: 1
+2026-02-21 18:23:15,190:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 18:23:15,190:INFO:   <<< fp16: False
+2026-02-21 18:23:15,190:INFO:   <<< fp16_opt_level: O1
+2026-02-21 18:23:15,190:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 18:23:15,190:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 18:23:15,191:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts_contrast_v_n_v2/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 18:23:15,191:INFO:   <<< local_rank: 0
+2026-02-21 18:23:15,191:INFO:   <<< lr: 0.0001
+2026-02-21 18:23:15,191:INFO:   <<< lr_decay: 0.9
+2026-02-21 18:23:15,191:INFO:   <<< margin: 0.1
+2026-02-21 18:23:15,191:INFO:   <<< max_frames: 20
+2026-02-21 18:23:15,191:INFO:   <<< max_words: 48
+2026-02-21 18:23:15,191:INFO:   <<< min_time: 5.0
+2026-02-21 18:23:15,191:INFO:   <<< n_display: 50
+2026-02-21 18:23:15,191:INFO:   <<< n_gpu: 1
+2026-02-21 18:23:15,191:INFO:   <<< n_pair: 1
+2026-02-21 18:23:15,191:INFO:   <<< negative_weighting: 1
+2026-02-21 18:23:15,191:INFO:   <<< noise_schedule: sqrt
+2026-02-21 18:23:15,191:INFO:   <<< num_thread_reader: 16
+2026-02-21 18:23:15,191:INFO:   <<< output_dir: ../ckpts/msrvtt_lr1e-4_eval
+2026-02-21 18:23:15,191:INFO:   <<< patience: 50
+2026-02-21 18:23:15,191:INFO:   <<< patience_metric: CIDEr
+2026-02-21 18:23:15,191:INFO:   <<< predict_xstart: True
+2026-02-21 18:23:15,191:INFO:   <<< prototype: False
+2026-02-21 18:23:15,191:INFO:   <<< sampled_use_mil: False
+2026-02-21 18:23:15,191:INFO:   <<< schedulesampler: uniform
+2026-02-21 18:23:15,191:INFO:   <<< seed: 42
+2026-02-21 18:23:15,191:INFO:   <<< sigma_small: False
+2026-02-21 18:23:15,191:INFO:   <<< steps: 1000
+2026-02-21 18:23:15,191:INFO:   <<< target_metric: CIDEr
+2026-02-21 18:23:15,191:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 18:23:15,191:INFO:   <<< use_mil: False
+2026-02-21 18:23:15,191:INFO:   <<< video_dim: 512
+2026-02-21 18:23:15,191:INFO:   <<< video_feat_type: Clip
+2026-02-21 18:23:15,191:INFO:   <<< visual_model: visual-base
+2026-02-21 18:23:15,191:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 18:23:15,191:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 18:23:15,191:INFO:   <<< world_size: 1
+2026-02-21 18:23:15,191:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 18:23:15,191:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 18:23:15,667:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 18:23:15,667:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:23:15,667:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 18:23:15,668:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 18:23:15,668:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 18:23:15,668:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 18:23:15,668:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:23:15,668:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 18:23:15,670:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/diffusion-base
+2026-02-21 18:23:15,671:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "clamp_step": 0,
+  "diffusion": 0,
+  "diffusion_steps": 1000,
+  "dropout": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "hidden_t_dim": 128,
+  "init_pretrained": 0,
+  "input_dims": 768,
+  "intermediate_size": 3072,
+  "logits_mode": 1,
+  "max_position_embeddings": 768,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "output_dims": 768,
+  "sequence_output_diffusion": 0,
+  "step": 1000,
+  "top_p": -1,
+  "type_vocab_size": 2,
+  "use_ddim": 1,
+  "use_fp16": 0,
+  "visual_size": 20,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:23:15,671:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/diffusion-base/diffusion_pytorch_model.bin
+2026-02-21 18:23:15,671:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 18:23:16,073:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 18:23:16,140:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 18:23:17,564:INFO: --------------------
+2026-02-21 18:23:17,564:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 18:23:17,564:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 18:23:23,155:INFO: ***** Running val *****
+2026-02-21 18:23:23,155:INFO:   Num examples = 497
+2026-02-21 18:23:23,155:INFO:   Batch size = 128
+2026-02-21 18:23:23,155:INFO:   Num steps = 4
+2026-02-21 18:23:23,155:INFO: ***** Running test *****
+2026-02-21 18:23:23,155:INFO:   Num examples = 2990
+2026-02-21 18:23:23,155:INFO:   Batch size = 128
+2026-02-21 18:23:23,155:INFO:   Num steps = 24
+2026-02-21 18:24:05,412:INFO: >>>  BLEU_1: 0.8602, BLEU_2: 0.7442, BLEU_3: 0.6161, BLEU_4: 0.4936
+2026-02-21 18:24:05,412:INFO: >>>  METEOR: 0.3165, ROUGE_L: 0.6564, CIDEr: 0.6171
+2026-02-21 18:25:07,104:INFO: Effective parameters:
+2026-02-21 18:25:07,104:INFO:   <<< batch_size: 512
+2026-02-21 18:25:07,104:INFO:   <<< batch_size_val: 128
+2026-02-21 18:25:07,104:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 18:25:07,104:INFO:   <<< cache_dir: 
+2026-02-21 18:25:07,104:INFO:   <<< cluster: True
+2026-02-21 18:25:07,104:INFO:   <<< coef_lr: 0.1
+2026-02-21 18:25:07,104:INFO:   <<< contrast: True
+2026-02-21 18:25:07,104:INFO:   <<< d_model: 512
+2026-02-21 18:25:07,104:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 18:25:07,104:INFO:   <<< datatype: msrvtt
+2026-02-21 18:25:07,104:INFO:   <<< decoder_model: decoder-base
+2026-02-21 18:25:07,104:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 18:25:07,104:INFO:   <<< diffusion: False
+2026-02-21 18:25:07,104:INFO:   <<< diffusion_model: diffusion-base
+2026-02-21 18:25:07,104:INFO:   <<< diffusion_steps: 1000
+2026-02-21 18:25:07,104:INFO:   <<< do_eval: True
+2026-02-21 18:25:07,104:INFO:   <<< do_lower_case: True
+2026-02-21 18:25:07,104:INFO:   <<< do_train: False
+2026-02-21 18:25:07,104:INFO:   <<< epochs: 50
+2026-02-21 18:25:07,104:INFO:   <<< feature_framerate: 1
+2026-02-21 18:25:07,104:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 18:25:07,104:INFO:   <<< fp16: False
+2026-02-21 18:25:07,104:INFO:   <<< fp16_opt_level: O1
+2026-02-21 18:25:07,104:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 18:25:07,104:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 18:25:07,104:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 18:25:07,104:INFO:   <<< local_rank: 0
+2026-02-21 18:25:07,105:INFO:   <<< lr: 0.0001
+2026-02-21 18:25:07,105:INFO:   <<< lr_decay: 0.9
+2026-02-21 18:25:07,105:INFO:   <<< margin: 0.1
+2026-02-21 18:25:07,105:INFO:   <<< max_frames: 20
+2026-02-21 18:25:07,105:INFO:   <<< max_words: 48
+2026-02-21 18:25:07,105:INFO:   <<< min_time: 5.0
+2026-02-21 18:25:07,105:INFO:   <<< n_display: 50
+2026-02-21 18:25:07,105:INFO:   <<< n_gpu: 1
+2026-02-21 18:25:07,105:INFO:   <<< n_pair: 1
+2026-02-21 18:25:07,105:INFO:   <<< negative_weighting: 1
+2026-02-21 18:25:07,105:INFO:   <<< noise_schedule: sqrt
+2026-02-21 18:25:07,105:INFO:   <<< num_thread_reader: 16
+2026-02-21 18:25:07,105:INFO:   <<< output_dir: ../Result/msrvtt_lr1e-4_eval
+2026-02-21 18:25:07,105:INFO:   <<< patience: 50
+2026-02-21 18:25:07,105:INFO:   <<< patience_metric: CIDEr
+2026-02-21 18:25:07,105:INFO:   <<< predict_xstart: True
+2026-02-21 18:25:07,105:INFO:   <<< prototype: False
+2026-02-21 18:25:07,105:INFO:   <<< sampled_use_mil: False
+2026-02-21 18:25:07,105:INFO:   <<< schedulesampler: uniform
+2026-02-21 18:25:07,105:INFO:   <<< seed: 42
+2026-02-21 18:25:07,105:INFO:   <<< sigma_small: False
+2026-02-21 18:25:07,106:INFO:   <<< steps: 1000
+2026-02-21 18:25:07,106:INFO:   <<< target_metric: CIDEr
+2026-02-21 18:25:07,106:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 18:25:07,106:INFO:   <<< use_mil: False
+2026-02-21 18:25:07,106:INFO:   <<< video_dim: 512
+2026-02-21 18:25:07,106:INFO:   <<< video_feat_type: Clip
+2026-02-21 18:25:07,106:INFO:   <<< visual_model: visual-base
+2026-02-21 18:25:07,106:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 18:25:07,106:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 18:25:07,106:INFO:   <<< world_size: 1
+2026-02-21 18:25:07,106:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 18:25:07,106:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 18:25:07,537:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 18:25:07,537:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:25:07,538:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 18:25:07,538:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 18:25:07,538:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 18:25:07,538:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 18:25:07,538:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:25:07,538:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 18:25:07,538:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/diffusion-base
+2026-02-21 18:25:07,539:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "clamp_step": 0,
+  "diffusion": 0,
+  "diffusion_steps": 1000,
+  "dropout": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "hidden_t_dim": 128,
+  "init_pretrained": 0,
+  "input_dims": 768,
+  "intermediate_size": 3072,
+  "logits_mode": 1,
+  "max_position_embeddings": 768,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "output_dims": 768,
+  "sequence_output_diffusion": 0,
+  "step": 1000,
+  "top_p": -1,
+  "type_vocab_size": 2,
+  "use_ddim": 1,
+  "use_fp16": 0,
+  "visual_size": 20,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:25:07,539:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/diffusion-base/diffusion_pytorch_model.bin
+2026-02-21 18:25:07,539:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 18:25:07,935:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 18:25:08,001:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 18:25:09,425:INFO: --------------------
+2026-02-21 18:25:09,425:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 18:25:09,425:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 18:25:15,087:INFO: ***** Running val *****
+2026-02-21 18:25:15,087:INFO:   Num examples = 497
+2026-02-21 18:25:15,087:INFO:   Batch size = 128
+2026-02-21 18:25:15,087:INFO:   Num steps = 4
+2026-02-21 18:25:15,087:INFO: ***** Running test *****
+2026-02-21 18:25:15,087:INFO:   Num examples = 2990
+2026-02-21 18:25:15,087:INFO:   Batch size = 128
+2026-02-21 18:25:15,087:INFO:   Num steps = 24
+2026-02-21 18:25:58,181:INFO: >>>  BLEU_1: 0.8602, BLEU_2: 0.7442, BLEU_3: 0.6161, BLEU_4: 0.4936
+2026-02-21 18:25:58,181:INFO: >>>  METEOR: 0.3165, ROUGE_L: 0.6564, CIDEr: 0.6171
+2026-02-21 18:40:13,647:INFO: Effective parameters:
+2026-02-21 18:40:13,647:INFO:   <<< batch_size: 512
+2026-02-21 18:40:13,647:INFO:   <<< batch_size_val: 128
+2026-02-21 18:40:13,647:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 18:40:13,647:INFO:   <<< cache_dir: 
+2026-02-21 18:40:13,647:INFO:   <<< cluster: True
+2026-02-21 18:40:13,647:INFO:   <<< coef_lr: 0.1
+2026-02-21 18:40:13,647:INFO:   <<< contrast: True
+2026-02-21 18:40:13,647:INFO:   <<< d_model: 512
+2026-02-21 18:40:13,647:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 18:40:13,647:INFO:   <<< datatype: msrvtt
+2026-02-21 18:40:13,647:INFO:   <<< decoder_model: decoder-base
+2026-02-21 18:40:13,647:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 18:40:13,647:INFO:   <<< do_eval: True
+2026-02-21 18:40:13,647:INFO:   <<< do_lower_case: True
+2026-02-21 18:40:13,647:INFO:   <<< do_train: False
+2026-02-21 18:40:13,648:INFO:   <<< epochs: 50
+2026-02-21 18:40:13,648:INFO:   <<< feature_framerate: 1
+2026-02-21 18:40:13,648:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 18:40:13,648:INFO:   <<< fp16: False
+2026-02-21 18:40:13,648:INFO:   <<< fp16_opt_level: O1
+2026-02-21 18:40:13,648:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 18:40:13,648:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 18:40:13,648:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 18:40:13,648:INFO:   <<< local_rank: 0
+2026-02-21 18:40:13,648:INFO:   <<< lr: 0.0001
+2026-02-21 18:40:13,648:INFO:   <<< lr_decay: 0.9
+2026-02-21 18:40:13,648:INFO:   <<< margin: 0.1
+2026-02-21 18:40:13,648:INFO:   <<< max_frames: 20
+2026-02-21 18:40:13,648:INFO:   <<< max_words: 48
+2026-02-21 18:40:13,648:INFO:   <<< min_time: 5.0
+2026-02-21 18:40:13,648:INFO:   <<< n_display: 50
+2026-02-21 18:40:13,648:INFO:   <<< n_gpu: 1
+2026-02-21 18:40:13,648:INFO:   <<< n_pair: 1
+2026-02-21 18:40:13,648:INFO:   <<< negative_weighting: 1
+2026-02-21 18:40:13,648:INFO:   <<< num_thread_reader: 16
+2026-02-21 18:40:13,648:INFO:   <<< output_dir: ../Result/msrvtt_lr1e-4_eval
+2026-02-21 18:40:13,648:INFO:   <<< patience: 50
+2026-02-21 18:40:13,648:INFO:   <<< patience_metric: CIDEr
+2026-02-21 18:40:13,648:INFO:   <<< prototype: False
+2026-02-21 18:40:13,648:INFO:   <<< sampled_use_mil: False
+2026-02-21 18:40:13,648:INFO:   <<< seed: 42
+2026-02-21 18:40:13,648:INFO:   <<< target_metric: CIDEr
+2026-02-21 18:40:13,648:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 18:40:13,648:INFO:   <<< use_mil: False
+2026-02-21 18:40:13,648:INFO:   <<< video_dim: 512
+2026-02-21 18:40:13,648:INFO:   <<< video_feat_type: Clip
+2026-02-21 18:40:13,648:INFO:   <<< visual_model: visual-base
+2026-02-21 18:40:13,648:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 18:40:13,648:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 18:40:13,648:INFO:   <<< world_size: 1
+2026-02-21 18:40:13,648:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 18:40:13,648:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 18:40:13,917:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 18:40:13,917:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:40:13,917:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 18:40:13,917:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 18:40:13,918:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 18:40:13,918:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 18:40:13,918:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:40:13,918:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 18:40:13,918:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 18:40:14,315:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 18:40:14,381:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 18:40:15,141:INFO: --------------------
+2026-02-21 18:40:15,141:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 18:40:15,141:INFO: Weights from pretrained model not used in CaptionGenerator: 
+   word_embedding_weight
+   bert_diffusion.embeddings.word_embeddings.weight
+   bert_diffusion.embeddings.position_embeddings.weight
+   bert_diffusion.embeddings.token_type_embeddings.weight
+   bert_diffusion.embeddings.LayerNorm.weight
+   bert_diffusion.embeddings.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.attention.self.query.weight
+   bert_diffusion.encoder.layer.0.attention.self.query.bias
+   bert_diffusion.encoder.layer.0.attention.self.key.weight
+   bert_diffusion.encoder.layer.0.attention.self.key.bias
+   bert_diffusion.encoder.layer.0.attention.self.value.weight
+   bert_diffusion.encoder.layer.0.attention.self.value.bias
+   bert_diffusion.encoder.layer.0.attention.output.dense.weight
+   bert_diffusion.encoder.layer.0.attention.output.dense.bias
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.intermediate.dense.weight
+   bert_diffusion.encoder.layer.0.intermediate.dense.bias
+   bert_diffusion.encoder.layer.0.output.dense.weight
+   bert_diffusion.encoder.layer.0.output.dense.bias
+   bert_diffusion.encoder.layer.0.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.attention.self.query.weight
+   bert_diffusion.encoder.layer.1.attention.self.query.bias
+   bert_diffusion.encoder.layer.1.attention.self.key.weight
+   bert_diffusion.encoder.layer.1.attention.self.key.bias
+   bert_diffusion.encoder.layer.1.attention.self.value.weight
+   bert_diffusion.encoder.layer.1.attention.self.value.bias
+   bert_diffusion.encoder.layer.1.attention.output.dense.weight
+   bert_diffusion.encoder.layer.1.attention.output.dense.bias
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.intermediate.dense.weight
+   bert_diffusion.encoder.layer.1.intermediate.dense.bias
+   bert_diffusion.encoder.layer.1.output.dense.weight
+   bert_diffusion.encoder.layer.1.output.dense.bias
+   bert_diffusion.encoder.layer.1.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.attention.self.query.weight
+   bert_diffusion.encoder.layer.2.attention.self.query.bias
+   bert_diffusion.encoder.layer.2.attention.self.key.weight
+   bert_diffusion.encoder.layer.2.attention.self.key.bias
+   bert_diffusion.encoder.layer.2.attention.self.value.weight
+   bert_diffusion.encoder.layer.2.attention.self.value.bias
+   bert_diffusion.encoder.layer.2.attention.output.dense.weight
+   bert_diffusion.encoder.layer.2.attention.output.dense.bias
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.intermediate.dense.weight
+   bert_diffusion.encoder.layer.2.intermediate.dense.bias
+   bert_diffusion.encoder.layer.2.output.dense.weight
+   bert_diffusion.encoder.layer.2.output.dense.bias
+   bert_diffusion.encoder.layer.2.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.attention.self.query.weight
+   bert_diffusion.encoder.layer.3.attention.self.query.bias
+   bert_diffusion.encoder.layer.3.attention.self.key.weight
+   bert_diffusion.encoder.layer.3.attention.self.key.bias
+   bert_diffusion.encoder.layer.3.attention.self.value.weight
+   bert_diffusion.encoder.layer.3.attention.self.value.bias
+   bert_diffusion.encoder.layer.3.attention.output.dense.weight
+   bert_diffusion.encoder.layer.3.attention.output.dense.bias
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.intermediate.dense.weight
+   bert_diffusion.encoder.layer.3.intermediate.dense.bias
+   bert_diffusion.encoder.layer.3.output.dense.weight
+   bert_diffusion.encoder.layer.3.output.dense.bias
+   bert_diffusion.encoder.layer.3.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.attention.self.query.weight
+   bert_diffusion.encoder.layer.4.attention.self.query.bias
+   bert_diffusion.encoder.layer.4.attention.self.key.weight
+   bert_diffusion.encoder.layer.4.attention.self.key.bias
+   bert_diffusion.encoder.layer.4.attention.self.value.weight
+   bert_diffusion.encoder.layer.4.attention.self.value.bias
+   bert_diffusion.encoder.layer.4.attention.output.dense.weight
+   bert_diffusion.encoder.layer.4.attention.output.dense.bias
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.intermediate.dense.weight
+   bert_diffusion.encoder.layer.4.intermediate.dense.bias
+   bert_diffusion.encoder.layer.4.output.dense.weight
+   bert_diffusion.encoder.layer.4.output.dense.bias
+   bert_diffusion.encoder.layer.4.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.attention.self.query.weight
+   bert_diffusion.encoder.layer.5.attention.self.query.bias
+   bert_diffusion.encoder.layer.5.attention.self.key.weight
+   bert_diffusion.encoder.layer.5.attention.self.key.bias
+   bert_diffusion.encoder.layer.5.attention.self.value.weight
+   bert_diffusion.encoder.layer.5.attention.self.value.bias
+   bert_diffusion.encoder.layer.5.attention.output.dense.weight
+   bert_diffusion.encoder.layer.5.attention.output.dense.bias
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.intermediate.dense.weight
+   bert_diffusion.encoder.layer.5.intermediate.dense.bias
+   bert_diffusion.encoder.layer.5.output.dense.weight
+   bert_diffusion.encoder.layer.5.output.dense.bias
+   bert_diffusion.encoder.layer.5.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.attention.self.query.weight
+   bert_diffusion.encoder.layer.6.attention.self.query.bias
+   bert_diffusion.encoder.layer.6.attention.self.key.weight
+   bert_diffusion.encoder.layer.6.attention.self.key.bias
+   bert_diffusion.encoder.layer.6.attention.self.value.weight
+   bert_diffusion.encoder.layer.6.attention.self.value.bias
+   bert_diffusion.encoder.layer.6.attention.output.dense.weight
+   bert_diffusion.encoder.layer.6.attention.output.dense.bias
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.intermediate.dense.weight
+   bert_diffusion.encoder.layer.6.intermediate.dense.bias
+   bert_diffusion.encoder.layer.6.output.dense.weight
+   bert_diffusion.encoder.layer.6.output.dense.bias
+   bert_diffusion.encoder.layer.6.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.attention.self.query.weight
+   bert_diffusion.encoder.layer.7.attention.self.query.bias
+   bert_diffusion.encoder.layer.7.attention.self.key.weight
+   bert_diffusion.encoder.layer.7.attention.self.key.bias
+   bert_diffusion.encoder.layer.7.attention.self.value.weight
+   bert_diffusion.encoder.layer.7.attention.self.value.bias
+   bert_diffusion.encoder.layer.7.attention.output.dense.weight
+   bert_diffusion.encoder.layer.7.attention.output.dense.bias
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.intermediate.dense.weight
+   bert_diffusion.encoder.layer.7.intermediate.dense.bias
+   bert_diffusion.encoder.layer.7.output.dense.weight
+   bert_diffusion.encoder.layer.7.output.dense.bias
+   bert_diffusion.encoder.layer.7.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.attention.self.query.weight
+   bert_diffusion.encoder.layer.8.attention.self.query.bias
+   bert_diffusion.encoder.layer.8.attention.self.key.weight
+   bert_diffusion.encoder.layer.8.attention.self.key.bias
+   bert_diffusion.encoder.layer.8.attention.self.value.weight
+   bert_diffusion.encoder.layer.8.attention.self.value.bias
+   bert_diffusion.encoder.layer.8.attention.output.dense.weight
+   bert_diffusion.encoder.layer.8.attention.output.dense.bias
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.intermediate.dense.weight
+   bert_diffusion.encoder.layer.8.intermediate.dense.bias
+   bert_diffusion.encoder.layer.8.output.dense.weight
+   bert_diffusion.encoder.layer.8.output.dense.bias
+   bert_diffusion.encoder.layer.8.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.attention.self.query.weight
+   bert_diffusion.encoder.layer.9.attention.self.query.bias
+   bert_diffusion.encoder.layer.9.attention.self.key.weight
+   bert_diffusion.encoder.layer.9.attention.self.key.bias
+   bert_diffusion.encoder.layer.9.attention.self.value.weight
+   bert_diffusion.encoder.layer.9.attention.self.value.bias
+   bert_diffusion.encoder.layer.9.attention.output.dense.weight
+   bert_diffusion.encoder.layer.9.attention.output.dense.bias
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.intermediate.dense.weight
+   bert_diffusion.encoder.layer.9.intermediate.dense.bias
+   bert_diffusion.encoder.layer.9.output.dense.weight
+   bert_diffusion.encoder.layer.9.output.dense.bias
+   bert_diffusion.encoder.layer.9.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.attention.self.query.weight
+   bert_diffusion.encoder.layer.10.attention.self.query.bias
+   bert_diffusion.encoder.layer.10.attention.self.key.weight
+   bert_diffusion.encoder.layer.10.attention.self.key.bias
+   bert_diffusion.encoder.layer.10.attention.self.value.weight
+   bert_diffusion.encoder.layer.10.attention.self.value.bias
+   bert_diffusion.encoder.layer.10.attention.output.dense.weight
+   bert_diffusion.encoder.layer.10.attention.output.dense.bias
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.intermediate.dense.weight
+   bert_diffusion.encoder.layer.10.intermediate.dense.bias
+   bert_diffusion.encoder.layer.10.output.dense.weight
+   bert_diffusion.encoder.layer.10.output.dense.bias
+   bert_diffusion.encoder.layer.10.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.attention.self.query.weight
+   bert_diffusion.encoder.layer.11.attention.self.query.bias
+   bert_diffusion.encoder.layer.11.attention.self.key.weight
+   bert_diffusion.encoder.layer.11.attention.self.key.bias
+   bert_diffusion.encoder.layer.11.attention.self.value.weight
+   bert_diffusion.encoder.layer.11.attention.self.value.bias
+   bert_diffusion.encoder.layer.11.attention.output.dense.weight
+   bert_diffusion.encoder.layer.11.attention.output.dense.bias
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.intermediate.dense.weight
+   bert_diffusion.encoder.layer.11.intermediate.dense.bias
+   bert_diffusion.encoder.layer.11.output.dense.weight
+   bert_diffusion.encoder.layer.11.output.dense.bias
+   bert_diffusion.encoder.layer.11.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.output.LayerNorm.bias
+   bert_diffusion.pooler.dense.weight
+   bert_diffusion.pooler.dense.bias
+2026-02-21 18:40:15,141:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 18:40:20,668:INFO: ***** Running val *****
+2026-02-21 18:40:20,668:INFO:   Num examples = 497
+2026-02-21 18:40:20,668:INFO:   Batch size = 128
+2026-02-21 18:40:20,669:INFO:   Num steps = 4
+2026-02-21 18:40:20,669:INFO: ***** Running test *****
+2026-02-21 18:40:20,669:INFO:   Num examples = 2990
+2026-02-21 18:40:20,669:INFO:   Batch size = 128
+2026-02-21 18:40:20,669:INFO:   Num steps = 24
+2026-02-21 18:40:48,080:INFO: Effective parameters:
+2026-02-21 18:40:48,080:INFO:   <<< batch_size: 512
+2026-02-21 18:40:48,080:INFO:   <<< batch_size_val: 128
+2026-02-21 18:40:48,080:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 18:40:48,080:INFO:   <<< cache_dir: 
+2026-02-21 18:40:48,080:INFO:   <<< cluster: True
+2026-02-21 18:40:48,080:INFO:   <<< coef_lr: 0.1
+2026-02-21 18:40:48,081:INFO:   <<< contrast: True
+2026-02-21 18:40:48,081:INFO:   <<< d_model: 512
+2026-02-21 18:40:48,081:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 18:40:48,081:INFO:   <<< datatype: msrvtt
+2026-02-21 18:40:48,081:INFO:   <<< decoder_model: decoder-base
+2026-02-21 18:40:48,081:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 18:40:48,081:INFO:   <<< do_eval: True
+2026-02-21 18:40:48,081:INFO:   <<< do_lower_case: True
+2026-02-21 18:40:48,081:INFO:   <<< do_train: False
+2026-02-21 18:40:48,081:INFO:   <<< epochs: 50
+2026-02-21 18:40:48,081:INFO:   <<< feature_framerate: 1
+2026-02-21 18:40:48,081:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 18:40:48,081:INFO:   <<< fp16: False
+2026-02-21 18:40:48,081:INFO:   <<< fp16_opt_level: O1
+2026-02-21 18:40:48,081:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 18:40:48,081:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 18:40:48,081:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 18:40:48,081:INFO:   <<< local_rank: 0
+2026-02-21 18:40:48,081:INFO:   <<< lr: 0.0001
+2026-02-21 18:40:48,081:INFO:   <<< lr_decay: 0.9
+2026-02-21 18:40:48,081:INFO:   <<< margin: 0.1
+2026-02-21 18:40:48,081:INFO:   <<< max_frames: 20
+2026-02-21 18:40:48,081:INFO:   <<< max_words: 48
+2026-02-21 18:40:48,081:INFO:   <<< min_time: 5.0
+2026-02-21 18:40:48,081:INFO:   <<< n_display: 50
+2026-02-21 18:40:48,081:INFO:   <<< n_gpu: 1
+2026-02-21 18:40:48,081:INFO:   <<< n_pair: 1
+2026-02-21 18:40:48,081:INFO:   <<< negative_weighting: 1
+2026-02-21 18:40:48,081:INFO:   <<< num_thread_reader: 16
+2026-02-21 18:40:48,081:INFO:   <<< output_dir: ../Result/msrvtt_lr1e-4_eval
+2026-02-21 18:40:48,081:INFO:   <<< patience: 50
+2026-02-21 18:40:48,081:INFO:   <<< patience_metric: CIDEr
+2026-02-21 18:40:48,081:INFO:   <<< prototype: False
+2026-02-21 18:40:48,081:INFO:   <<< sampled_use_mil: False
+2026-02-21 18:40:48,081:INFO:   <<< seed: 42
+2026-02-21 18:40:48,081:INFO:   <<< target_metric: CIDEr
+2026-02-21 18:40:48,081:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 18:40:48,081:INFO:   <<< use_mil: False
+2026-02-21 18:40:48,081:INFO:   <<< video_dim: 512
+2026-02-21 18:40:48,081:INFO:   <<< video_feat_type: Clip
+2026-02-21 18:40:48,081:INFO:   <<< visual_model: visual-base
+2026-02-21 18:40:48,081:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 18:40:48,081:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 18:40:48,081:INFO:   <<< world_size: 1
+2026-02-21 18:40:48,082:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 18:40:48,082:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 18:40:48,352:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 18:40:48,352:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:40:48,353:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 18:40:48,353:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 18:40:48,353:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 18:40:48,353:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 18:40:48,353:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 18:40:48,353:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 18:40:48,353:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 18:40:48,748:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 18:40:48,816:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 18:40:49,613:INFO: --------------------
+2026-02-21 18:40:49,614:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 18:40:49,614:INFO: Weights from pretrained model not used in CaptionGenerator: 
+   word_embedding_weight
+   bert_diffusion.embeddings.word_embeddings.weight
+   bert_diffusion.embeddings.position_embeddings.weight
+   bert_diffusion.embeddings.token_type_embeddings.weight
+   bert_diffusion.embeddings.LayerNorm.weight
+   bert_diffusion.embeddings.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.attention.self.query.weight
+   bert_diffusion.encoder.layer.0.attention.self.query.bias
+   bert_diffusion.encoder.layer.0.attention.self.key.weight
+   bert_diffusion.encoder.layer.0.attention.self.key.bias
+   bert_diffusion.encoder.layer.0.attention.self.value.weight
+   bert_diffusion.encoder.layer.0.attention.self.value.bias
+   bert_diffusion.encoder.layer.0.attention.output.dense.weight
+   bert_diffusion.encoder.layer.0.attention.output.dense.bias
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.intermediate.dense.weight
+   bert_diffusion.encoder.layer.0.intermediate.dense.bias
+   bert_diffusion.encoder.layer.0.output.dense.weight
+   bert_diffusion.encoder.layer.0.output.dense.bias
+   bert_diffusion.encoder.layer.0.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.attention.self.query.weight
+   bert_diffusion.encoder.layer.1.attention.self.query.bias
+   bert_diffusion.encoder.layer.1.attention.self.key.weight
+   bert_diffusion.encoder.layer.1.attention.self.key.bias
+   bert_diffusion.encoder.layer.1.attention.self.value.weight
+   bert_diffusion.encoder.layer.1.attention.self.value.bias
+   bert_diffusion.encoder.layer.1.attention.output.dense.weight
+   bert_diffusion.encoder.layer.1.attention.output.dense.bias
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.intermediate.dense.weight
+   bert_diffusion.encoder.layer.1.intermediate.dense.bias
+   bert_diffusion.encoder.layer.1.output.dense.weight
+   bert_diffusion.encoder.layer.1.output.dense.bias
+   bert_diffusion.encoder.layer.1.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.attention.self.query.weight
+   bert_diffusion.encoder.layer.2.attention.self.query.bias
+   bert_diffusion.encoder.layer.2.attention.self.key.weight
+   bert_diffusion.encoder.layer.2.attention.self.key.bias
+   bert_diffusion.encoder.layer.2.attention.self.value.weight
+   bert_diffusion.encoder.layer.2.attention.self.value.bias
+   bert_diffusion.encoder.layer.2.attention.output.dense.weight
+   bert_diffusion.encoder.layer.2.attention.output.dense.bias
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.intermediate.dense.weight
+   bert_diffusion.encoder.layer.2.intermediate.dense.bias
+   bert_diffusion.encoder.layer.2.output.dense.weight
+   bert_diffusion.encoder.layer.2.output.dense.bias
+   bert_diffusion.encoder.layer.2.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.attention.self.query.weight
+   bert_diffusion.encoder.layer.3.attention.self.query.bias
+   bert_diffusion.encoder.layer.3.attention.self.key.weight
+   bert_diffusion.encoder.layer.3.attention.self.key.bias
+   bert_diffusion.encoder.layer.3.attention.self.value.weight
+   bert_diffusion.encoder.layer.3.attention.self.value.bias
+   bert_diffusion.encoder.layer.3.attention.output.dense.weight
+   bert_diffusion.encoder.layer.3.attention.output.dense.bias
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.intermediate.dense.weight
+   bert_diffusion.encoder.layer.3.intermediate.dense.bias
+   bert_diffusion.encoder.layer.3.output.dense.weight
+   bert_diffusion.encoder.layer.3.output.dense.bias
+   bert_diffusion.encoder.layer.3.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.attention.self.query.weight
+   bert_diffusion.encoder.layer.4.attention.self.query.bias
+   bert_diffusion.encoder.layer.4.attention.self.key.weight
+   bert_diffusion.encoder.layer.4.attention.self.key.bias
+   bert_diffusion.encoder.layer.4.attention.self.value.weight
+   bert_diffusion.encoder.layer.4.attention.self.value.bias
+   bert_diffusion.encoder.layer.4.attention.output.dense.weight
+   bert_diffusion.encoder.layer.4.attention.output.dense.bias
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.intermediate.dense.weight
+   bert_diffusion.encoder.layer.4.intermediate.dense.bias
+   bert_diffusion.encoder.layer.4.output.dense.weight
+   bert_diffusion.encoder.layer.4.output.dense.bias
+   bert_diffusion.encoder.layer.4.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.attention.self.query.weight
+   bert_diffusion.encoder.layer.5.attention.self.query.bias
+   bert_diffusion.encoder.layer.5.attention.self.key.weight
+   bert_diffusion.encoder.layer.5.attention.self.key.bias
+   bert_diffusion.encoder.layer.5.attention.self.value.weight
+   bert_diffusion.encoder.layer.5.attention.self.value.bias
+   bert_diffusion.encoder.layer.5.attention.output.dense.weight
+   bert_diffusion.encoder.layer.5.attention.output.dense.bias
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.intermediate.dense.weight
+   bert_diffusion.encoder.layer.5.intermediate.dense.bias
+   bert_diffusion.encoder.layer.5.output.dense.weight
+   bert_diffusion.encoder.layer.5.output.dense.bias
+   bert_diffusion.encoder.layer.5.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.attention.self.query.weight
+   bert_diffusion.encoder.layer.6.attention.self.query.bias
+   bert_diffusion.encoder.layer.6.attention.self.key.weight
+   bert_diffusion.encoder.layer.6.attention.self.key.bias
+   bert_diffusion.encoder.layer.6.attention.self.value.weight
+   bert_diffusion.encoder.layer.6.attention.self.value.bias
+   bert_diffusion.encoder.layer.6.attention.output.dense.weight
+   bert_diffusion.encoder.layer.6.attention.output.dense.bias
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.intermediate.dense.weight
+   bert_diffusion.encoder.layer.6.intermediate.dense.bias
+   bert_diffusion.encoder.layer.6.output.dense.weight
+   bert_diffusion.encoder.layer.6.output.dense.bias
+   bert_diffusion.encoder.layer.6.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.attention.self.query.weight
+   bert_diffusion.encoder.layer.7.attention.self.query.bias
+   bert_diffusion.encoder.layer.7.attention.self.key.weight
+   bert_diffusion.encoder.layer.7.attention.self.key.bias
+   bert_diffusion.encoder.layer.7.attention.self.value.weight
+   bert_diffusion.encoder.layer.7.attention.self.value.bias
+   bert_diffusion.encoder.layer.7.attention.output.dense.weight
+   bert_diffusion.encoder.layer.7.attention.output.dense.bias
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.intermediate.dense.weight
+   bert_diffusion.encoder.layer.7.intermediate.dense.bias
+   bert_diffusion.encoder.layer.7.output.dense.weight
+   bert_diffusion.encoder.layer.7.output.dense.bias
+   bert_diffusion.encoder.layer.7.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.attention.self.query.weight
+   bert_diffusion.encoder.layer.8.attention.self.query.bias
+   bert_diffusion.encoder.layer.8.attention.self.key.weight
+   bert_diffusion.encoder.layer.8.attention.self.key.bias
+   bert_diffusion.encoder.layer.8.attention.self.value.weight
+   bert_diffusion.encoder.layer.8.attention.self.value.bias
+   bert_diffusion.encoder.layer.8.attention.output.dense.weight
+   bert_diffusion.encoder.layer.8.attention.output.dense.bias
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.intermediate.dense.weight
+   bert_diffusion.encoder.layer.8.intermediate.dense.bias
+   bert_diffusion.encoder.layer.8.output.dense.weight
+   bert_diffusion.encoder.layer.8.output.dense.bias
+   bert_diffusion.encoder.layer.8.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.attention.self.query.weight
+   bert_diffusion.encoder.layer.9.attention.self.query.bias
+   bert_diffusion.encoder.layer.9.attention.self.key.weight
+   bert_diffusion.encoder.layer.9.attention.self.key.bias
+   bert_diffusion.encoder.layer.9.attention.self.value.weight
+   bert_diffusion.encoder.layer.9.attention.self.value.bias
+   bert_diffusion.encoder.layer.9.attention.output.dense.weight
+   bert_diffusion.encoder.layer.9.attention.output.dense.bias
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.intermediate.dense.weight
+   bert_diffusion.encoder.layer.9.intermediate.dense.bias
+   bert_diffusion.encoder.layer.9.output.dense.weight
+   bert_diffusion.encoder.layer.9.output.dense.bias
+   bert_diffusion.encoder.layer.9.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.attention.self.query.weight
+   bert_diffusion.encoder.layer.10.attention.self.query.bias
+   bert_diffusion.encoder.layer.10.attention.self.key.weight
+   bert_diffusion.encoder.layer.10.attention.self.key.bias
+   bert_diffusion.encoder.layer.10.attention.self.value.weight
+   bert_diffusion.encoder.layer.10.attention.self.value.bias
+   bert_diffusion.encoder.layer.10.attention.output.dense.weight
+   bert_diffusion.encoder.layer.10.attention.output.dense.bias
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.intermediate.dense.weight
+   bert_diffusion.encoder.layer.10.intermediate.dense.bias
+   bert_diffusion.encoder.layer.10.output.dense.weight
+   bert_diffusion.encoder.layer.10.output.dense.bias
+   bert_diffusion.encoder.layer.10.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.attention.self.query.weight
+   bert_diffusion.encoder.layer.11.attention.self.query.bias
+   bert_diffusion.encoder.layer.11.attention.self.key.weight
+   bert_diffusion.encoder.layer.11.attention.self.key.bias
+   bert_diffusion.encoder.layer.11.attention.self.value.weight
+   bert_diffusion.encoder.layer.11.attention.self.value.bias
+   bert_diffusion.encoder.layer.11.attention.output.dense.weight
+   bert_diffusion.encoder.layer.11.attention.output.dense.bias
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.intermediate.dense.weight
+   bert_diffusion.encoder.layer.11.intermediate.dense.bias
+   bert_diffusion.encoder.layer.11.output.dense.weight
+   bert_diffusion.encoder.layer.11.output.dense.bias
+   bert_diffusion.encoder.layer.11.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.output.LayerNorm.bias
+   bert_diffusion.pooler.dense.weight
+   bert_diffusion.pooler.dense.bias
+2026-02-21 18:40:49,614:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 18:40:55,269:INFO: ***** Running val *****
+2026-02-21 18:40:55,269:INFO:   Num examples = 497
+2026-02-21 18:40:55,269:INFO:   Batch size = 128
+2026-02-21 18:40:55,269:INFO:   Num steps = 4
+2026-02-21 18:40:55,269:INFO: ***** Running test *****
+2026-02-21 18:40:55,269:INFO:   Num examples = 2990
+2026-02-21 18:40:55,269:INFO:   Batch size = 128
+2026-02-21 18:40:55,269:INFO:   Num steps = 24
+2026-02-21 18:41:37,158:INFO: >>>  BLEU_1: 0.8602, BLEU_2: 0.7442, BLEU_3: 0.6161, BLEU_4: 0.4936
+2026-02-21 18:41:37,158:INFO: >>>  METEOR: 0.3165, ROUGE_L: 0.6564, CIDEr: 0.6171
+2026-02-21 19:14:44,244:INFO: Effective parameters:
+2026-02-21 19:14:44,248:INFO:   <<< batch_size: 512
+2026-02-21 19:14:44,248:INFO:   <<< batch_size_val: 128
+2026-02-21 19:14:44,248:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 19:14:44,248:INFO:   <<< cache_dir: 
+2026-02-21 19:14:44,248:INFO:   <<< cluster: True
+2026-02-21 19:14:44,248:INFO:   <<< coef_lr: 0.1
+2026-02-21 19:14:44,248:INFO:   <<< contrast: True
+2026-02-21 19:14:44,248:INFO:   <<< d_model: 512
+2026-02-21 19:14:44,248:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 19:14:44,248:INFO:   <<< datatype: msrvtt
+2026-02-21 19:14:44,248:INFO:   <<< decoder_model: decoder-base
+2026-02-21 19:14:44,249:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 19:14:44,249:INFO:   <<< do_eval: True
+2026-02-21 19:14:44,249:INFO:   <<< do_lower_case: True
+2026-02-21 19:14:44,249:INFO:   <<< do_train: False
+2026-02-21 19:14:44,249:INFO:   <<< epochs: 50
+2026-02-21 19:14:44,249:INFO:   <<< feature_framerate: 1
+2026-02-21 19:14:44,249:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 19:14:44,249:INFO:   <<< fp16: False
+2026-02-21 19:14:44,249:INFO:   <<< fp16_opt_level: O1
+2026-02-21 19:14:44,249:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 19:14:44,249:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 19:14:44,249:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 19:14:44,249:INFO:   <<< local_rank: 0
+2026-02-21 19:14:44,249:INFO:   <<< lr: 0.0001
+2026-02-21 19:14:44,249:INFO:   <<< lr_decay: 0.9
+2026-02-21 19:14:44,249:INFO:   <<< margin: 0.1
+2026-02-21 19:14:44,249:INFO:   <<< max_frames: 20
+2026-02-21 19:14:44,249:INFO:   <<< max_words: 48
+2026-02-21 19:14:44,249:INFO:   <<< min_time: 5.0
+2026-02-21 19:14:44,249:INFO:   <<< n_display: 50
+2026-02-21 19:14:44,249:INFO:   <<< n_gpu: 1
+2026-02-21 19:14:44,249:INFO:   <<< n_pair: 1
+2026-02-21 19:14:44,249:INFO:   <<< negative_weighting: 1
+2026-02-21 19:14:44,249:INFO:   <<< num_thread_reader: 16
+2026-02-21 19:14:44,249:INFO:   <<< output_dir: ../Result/msrvtt_lr1e-4_eval
+2026-02-21 19:14:44,249:INFO:   <<< patience: 50
+2026-02-21 19:14:44,249:INFO:   <<< patience_metric: CIDEr
+2026-02-21 19:14:44,249:INFO:   <<< prototype: False
+2026-02-21 19:14:44,249:INFO:   <<< sampled_use_mil: False
+2026-02-21 19:14:44,249:INFO:   <<< seed: 42
+2026-02-21 19:14:44,250:INFO:   <<< target_metric: CIDEr
+2026-02-21 19:14:44,250:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 19:14:44,250:INFO:   <<< use_mil: False
+2026-02-21 19:14:44,250:INFO:   <<< video_dim: 512
+2026-02-21 19:14:44,250:INFO:   <<< video_feat_type: Clip
+2026-02-21 19:14:44,250:INFO:   <<< visual_model: visual-base
+2026-02-21 19:14:44,250:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 19:14:44,250:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 19:14:44,250:INFO:   <<< world_size: 1
+2026-02-21 19:14:44,250:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 19:14:44,250:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 19:14:44,522:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 19:14:44,523:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 19:14:44,523:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 19:14:44,523:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 19:14:44,523:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 19:14:44,523:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 19:14:44,523:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 19:14:44,523:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 19:14:44,524:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 19:14:44,937:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 19:14:45,008:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 19:14:45,798:INFO: --------------------
+2026-02-21 19:14:45,798:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 19:14:45,798:INFO: Weights from pretrained model not used in CaptionGenerator: 
+   word_embedding_weight
+   bert_diffusion.embeddings.word_embeddings.weight
+   bert_diffusion.embeddings.position_embeddings.weight
+   bert_diffusion.embeddings.token_type_embeddings.weight
+   bert_diffusion.embeddings.LayerNorm.weight
+   bert_diffusion.embeddings.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.attention.self.query.weight
+   bert_diffusion.encoder.layer.0.attention.self.query.bias
+   bert_diffusion.encoder.layer.0.attention.self.key.weight
+   bert_diffusion.encoder.layer.0.attention.self.key.bias
+   bert_diffusion.encoder.layer.0.attention.self.value.weight
+   bert_diffusion.encoder.layer.0.attention.self.value.bias
+   bert_diffusion.encoder.layer.0.attention.output.dense.weight
+   bert_diffusion.encoder.layer.0.attention.output.dense.bias
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.intermediate.dense.weight
+   bert_diffusion.encoder.layer.0.intermediate.dense.bias
+   bert_diffusion.encoder.layer.0.output.dense.weight
+   bert_diffusion.encoder.layer.0.output.dense.bias
+   bert_diffusion.encoder.layer.0.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.attention.self.query.weight
+   bert_diffusion.encoder.layer.1.attention.self.query.bias
+   bert_diffusion.encoder.layer.1.attention.self.key.weight
+   bert_diffusion.encoder.layer.1.attention.self.key.bias
+   bert_diffusion.encoder.layer.1.attention.self.value.weight
+   bert_diffusion.encoder.layer.1.attention.self.value.bias
+   bert_diffusion.encoder.layer.1.attention.output.dense.weight
+   bert_diffusion.encoder.layer.1.attention.output.dense.bias
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.intermediate.dense.weight
+   bert_diffusion.encoder.layer.1.intermediate.dense.bias
+   bert_diffusion.encoder.layer.1.output.dense.weight
+   bert_diffusion.encoder.layer.1.output.dense.bias
+   bert_diffusion.encoder.layer.1.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.attention.self.query.weight
+   bert_diffusion.encoder.layer.2.attention.self.query.bias
+   bert_diffusion.encoder.layer.2.attention.self.key.weight
+   bert_diffusion.encoder.layer.2.attention.self.key.bias
+   bert_diffusion.encoder.layer.2.attention.self.value.weight
+   bert_diffusion.encoder.layer.2.attention.self.value.bias
+   bert_diffusion.encoder.layer.2.attention.output.dense.weight
+   bert_diffusion.encoder.layer.2.attention.output.dense.bias
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.intermediate.dense.weight
+   bert_diffusion.encoder.layer.2.intermediate.dense.bias
+   bert_diffusion.encoder.layer.2.output.dense.weight
+   bert_diffusion.encoder.layer.2.output.dense.bias
+   bert_diffusion.encoder.layer.2.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.attention.self.query.weight
+   bert_diffusion.encoder.layer.3.attention.self.query.bias
+   bert_diffusion.encoder.layer.3.attention.self.key.weight
+   bert_diffusion.encoder.layer.3.attention.self.key.bias
+   bert_diffusion.encoder.layer.3.attention.self.value.weight
+   bert_diffusion.encoder.layer.3.attention.self.value.bias
+   bert_diffusion.encoder.layer.3.attention.output.dense.weight
+   bert_diffusion.encoder.layer.3.attention.output.dense.bias
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.intermediate.dense.weight
+   bert_diffusion.encoder.layer.3.intermediate.dense.bias
+   bert_diffusion.encoder.layer.3.output.dense.weight
+   bert_diffusion.encoder.layer.3.output.dense.bias
+   bert_diffusion.encoder.layer.3.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.attention.self.query.weight
+   bert_diffusion.encoder.layer.4.attention.self.query.bias
+   bert_diffusion.encoder.layer.4.attention.self.key.weight
+   bert_diffusion.encoder.layer.4.attention.self.key.bias
+   bert_diffusion.encoder.layer.4.attention.self.value.weight
+   bert_diffusion.encoder.layer.4.attention.self.value.bias
+   bert_diffusion.encoder.layer.4.attention.output.dense.weight
+   bert_diffusion.encoder.layer.4.attention.output.dense.bias
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.intermediate.dense.weight
+   bert_diffusion.encoder.layer.4.intermediate.dense.bias
+   bert_diffusion.encoder.layer.4.output.dense.weight
+   bert_diffusion.encoder.layer.4.output.dense.bias
+   bert_diffusion.encoder.layer.4.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.attention.self.query.weight
+   bert_diffusion.encoder.layer.5.attention.self.query.bias
+   bert_diffusion.encoder.layer.5.attention.self.key.weight
+   bert_diffusion.encoder.layer.5.attention.self.key.bias
+   bert_diffusion.encoder.layer.5.attention.self.value.weight
+   bert_diffusion.encoder.layer.5.attention.self.value.bias
+   bert_diffusion.encoder.layer.5.attention.output.dense.weight
+   bert_diffusion.encoder.layer.5.attention.output.dense.bias
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.intermediate.dense.weight
+   bert_diffusion.encoder.layer.5.intermediate.dense.bias
+   bert_diffusion.encoder.layer.5.output.dense.weight
+   bert_diffusion.encoder.layer.5.output.dense.bias
+   bert_diffusion.encoder.layer.5.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.attention.self.query.weight
+   bert_diffusion.encoder.layer.6.attention.self.query.bias
+   bert_diffusion.encoder.layer.6.attention.self.key.weight
+   bert_diffusion.encoder.layer.6.attention.self.key.bias
+   bert_diffusion.encoder.layer.6.attention.self.value.weight
+   bert_diffusion.encoder.layer.6.attention.self.value.bias
+   bert_diffusion.encoder.layer.6.attention.output.dense.weight
+   bert_diffusion.encoder.layer.6.attention.output.dense.bias
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.intermediate.dense.weight
+   bert_diffusion.encoder.layer.6.intermediate.dense.bias
+   bert_diffusion.encoder.layer.6.output.dense.weight
+   bert_diffusion.encoder.layer.6.output.dense.bias
+   bert_diffusion.encoder.layer.6.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.attention.self.query.weight
+   bert_diffusion.encoder.layer.7.attention.self.query.bias
+   bert_diffusion.encoder.layer.7.attention.self.key.weight
+   bert_diffusion.encoder.layer.7.attention.self.key.bias
+   bert_diffusion.encoder.layer.7.attention.self.value.weight
+   bert_diffusion.encoder.layer.7.attention.self.value.bias
+   bert_diffusion.encoder.layer.7.attention.output.dense.weight
+   bert_diffusion.encoder.layer.7.attention.output.dense.bias
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.intermediate.dense.weight
+   bert_diffusion.encoder.layer.7.intermediate.dense.bias
+   bert_diffusion.encoder.layer.7.output.dense.weight
+   bert_diffusion.encoder.layer.7.output.dense.bias
+   bert_diffusion.encoder.layer.7.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.attention.self.query.weight
+   bert_diffusion.encoder.layer.8.attention.self.query.bias
+   bert_diffusion.encoder.layer.8.attention.self.key.weight
+   bert_diffusion.encoder.layer.8.attention.self.key.bias
+   bert_diffusion.encoder.layer.8.attention.self.value.weight
+   bert_diffusion.encoder.layer.8.attention.self.value.bias
+   bert_diffusion.encoder.layer.8.attention.output.dense.weight
+   bert_diffusion.encoder.layer.8.attention.output.dense.bias
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.intermediate.dense.weight
+   bert_diffusion.encoder.layer.8.intermediate.dense.bias
+   bert_diffusion.encoder.layer.8.output.dense.weight
+   bert_diffusion.encoder.layer.8.output.dense.bias
+   bert_diffusion.encoder.layer.8.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.attention.self.query.weight
+   bert_diffusion.encoder.layer.9.attention.self.query.bias
+   bert_diffusion.encoder.layer.9.attention.self.key.weight
+   bert_diffusion.encoder.layer.9.attention.self.key.bias
+   bert_diffusion.encoder.layer.9.attention.self.value.weight
+   bert_diffusion.encoder.layer.9.attention.self.value.bias
+   bert_diffusion.encoder.layer.9.attention.output.dense.weight
+   bert_diffusion.encoder.layer.9.attention.output.dense.bias
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.intermediate.dense.weight
+   bert_diffusion.encoder.layer.9.intermediate.dense.bias
+   bert_diffusion.encoder.layer.9.output.dense.weight
+   bert_diffusion.encoder.layer.9.output.dense.bias
+   bert_diffusion.encoder.layer.9.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.attention.self.query.weight
+   bert_diffusion.encoder.layer.10.attention.self.query.bias
+   bert_diffusion.encoder.layer.10.attention.self.key.weight
+   bert_diffusion.encoder.layer.10.attention.self.key.bias
+   bert_diffusion.encoder.layer.10.attention.self.value.weight
+   bert_diffusion.encoder.layer.10.attention.self.value.bias
+   bert_diffusion.encoder.layer.10.attention.output.dense.weight
+   bert_diffusion.encoder.layer.10.attention.output.dense.bias
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.intermediate.dense.weight
+   bert_diffusion.encoder.layer.10.intermediate.dense.bias
+   bert_diffusion.encoder.layer.10.output.dense.weight
+   bert_diffusion.encoder.layer.10.output.dense.bias
+   bert_diffusion.encoder.layer.10.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.attention.self.query.weight
+   bert_diffusion.encoder.layer.11.attention.self.query.bias
+   bert_diffusion.encoder.layer.11.attention.self.key.weight
+   bert_diffusion.encoder.layer.11.attention.self.key.bias
+   bert_diffusion.encoder.layer.11.attention.self.value.weight
+   bert_diffusion.encoder.layer.11.attention.self.value.bias
+   bert_diffusion.encoder.layer.11.attention.output.dense.weight
+   bert_diffusion.encoder.layer.11.attention.output.dense.bias
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.intermediate.dense.weight
+   bert_diffusion.encoder.layer.11.intermediate.dense.bias
+   bert_diffusion.encoder.layer.11.output.dense.weight
+   bert_diffusion.encoder.layer.11.output.dense.bias
+   bert_diffusion.encoder.layer.11.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.output.LayerNorm.bias
+   bert_diffusion.pooler.dense.weight
+   bert_diffusion.pooler.dense.bias
+2026-02-21 19:14:45,798:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 19:14:51,782:INFO: ***** Running val *****
+2026-02-21 19:14:51,782:INFO:   Num examples = 497
+2026-02-21 19:14:51,782:INFO:   Batch size = 128
+2026-02-21 19:14:51,782:INFO:   Num steps = 4
+2026-02-21 19:14:51,782:INFO: ***** Running test *****
+2026-02-21 19:14:51,782:INFO:   Num examples = 2990
+2026-02-21 19:14:51,782:INFO:   Batch size = 128
+2026-02-21 19:14:51,782:INFO:   Num steps = 24
+2026-02-21 19:15:34,099:INFO: >>>  BLEU_1: 0.8602, BLEU_2: 0.7442, BLEU_3: 0.6161, BLEU_4: 0.4936
+2026-02-21 19:15:34,099:INFO: >>>  METEOR: 0.3165, ROUGE_L: 0.6564, CIDEr: 0.6171
+2026-02-21 19:18:29,912:INFO: Effective parameters:
+2026-02-21 19:18:29,912:INFO:   <<< batch_size: 512
+2026-02-21 19:18:29,912:INFO:   <<< batch_size_val: 128
+2026-02-21 19:18:29,912:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 19:18:29,912:INFO:   <<< cache_dir: 
+2026-02-21 19:18:29,912:INFO:   <<< cluster: True
+2026-02-21 19:18:29,912:INFO:   <<< coef_lr: 0.1
+2026-02-21 19:18:29,913:INFO:   <<< contrast: True
+2026-02-21 19:18:29,913:INFO:   <<< d_model: 512
+2026-02-21 19:18:29,913:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 19:18:29,913:INFO:   <<< datatype: msrvtt
+2026-02-21 19:18:29,913:INFO:   <<< decoder_model: decoder-base
+2026-02-21 19:18:29,913:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 19:18:29,913:INFO:   <<< do_eval: True
+2026-02-21 19:18:29,913:INFO:   <<< do_lower_case: True
+2026-02-21 19:18:29,913:INFO:   <<< do_train: False
+2026-02-21 19:18:29,913:INFO:   <<< epochs: 50
+2026-02-21 19:18:29,913:INFO:   <<< feature_framerate: 1
+2026-02-21 19:18:29,913:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 19:18:29,913:INFO:   <<< fp16: False
+2026-02-21 19:18:29,913:INFO:   <<< fp16_opt_level: O1
+2026-02-21 19:18:29,913:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 19:18:29,913:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 19:18:29,913:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 19:18:29,913:INFO:   <<< local_rank: 0
+2026-02-21 19:18:29,913:INFO:   <<< lr: 0.0001
+2026-02-21 19:18:29,913:INFO:   <<< lr_decay: 0.9
+2026-02-21 19:18:29,913:INFO:   <<< margin: 0.1
+2026-02-21 19:18:29,913:INFO:   <<< max_frames: 20
+2026-02-21 19:18:29,913:INFO:   <<< max_words: 48
+2026-02-21 19:18:29,913:INFO:   <<< min_time: 5.0
+2026-02-21 19:18:29,913:INFO:   <<< n_display: 50
+2026-02-21 19:18:29,913:INFO:   <<< n_gpu: 1
+2026-02-21 19:18:29,913:INFO:   <<< n_pair: 1
+2026-02-21 19:18:29,913:INFO:   <<< negative_weighting: 1
+2026-02-21 19:18:29,913:INFO:   <<< num_thread_reader: 16
+2026-02-21 19:18:29,913:INFO:   <<< output_dir: ../Result/msrvtt_lr1e-4_eval
+2026-02-21 19:18:29,913:INFO:   <<< patience: 50
+2026-02-21 19:18:29,913:INFO:   <<< patience_metric: CIDEr
+2026-02-21 19:18:29,913:INFO:   <<< prototype: False
+2026-02-21 19:18:29,913:INFO:   <<< sampled_use_mil: False
+2026-02-21 19:18:29,913:INFO:   <<< seed: 42
+2026-02-21 19:18:29,913:INFO:   <<< target_metric: CIDEr
+2026-02-21 19:18:29,913:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 19:18:29,913:INFO:   <<< use_mil: False
+2026-02-21 19:18:29,913:INFO:   <<< video_dim: 512
+2026-02-21 19:18:29,913:INFO:   <<< video_feat_type: Clip
+2026-02-21 19:18:29,913:INFO:   <<< visual_model: visual-base
+2026-02-21 19:18:29,913:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 19:18:29,913:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 19:18:29,913:INFO:   <<< world_size: 1
+2026-02-21 19:18:29,914:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 19:18:29,914:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 19:18:30,189:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 19:18:30,190:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 19:18:30,190:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 19:18:30,190:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 19:18:30,190:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 19:18:30,190:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 19:18:30,190:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 19:18:30,190:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 19:18:30,190:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 19:18:30,585:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 19:18:30,652:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 19:18:31,414:INFO: --------------------
+2026-02-21 19:18:31,414:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 19:18:31,414:INFO: Weights from pretrained model not used in CaptionGenerator: 
+   word_embedding_weight
+   bert_diffusion.embeddings.word_embeddings.weight
+   bert_diffusion.embeddings.position_embeddings.weight
+   bert_diffusion.embeddings.token_type_embeddings.weight
+   bert_diffusion.embeddings.LayerNorm.weight
+   bert_diffusion.embeddings.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.attention.self.query.weight
+   bert_diffusion.encoder.layer.0.attention.self.query.bias
+   bert_diffusion.encoder.layer.0.attention.self.key.weight
+   bert_diffusion.encoder.layer.0.attention.self.key.bias
+   bert_diffusion.encoder.layer.0.attention.self.value.weight
+   bert_diffusion.encoder.layer.0.attention.self.value.bias
+   bert_diffusion.encoder.layer.0.attention.output.dense.weight
+   bert_diffusion.encoder.layer.0.attention.output.dense.bias
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.intermediate.dense.weight
+   bert_diffusion.encoder.layer.0.intermediate.dense.bias
+   bert_diffusion.encoder.layer.0.output.dense.weight
+   bert_diffusion.encoder.layer.0.output.dense.bias
+   bert_diffusion.encoder.layer.0.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.attention.self.query.weight
+   bert_diffusion.encoder.layer.1.attention.self.query.bias
+   bert_diffusion.encoder.layer.1.attention.self.key.weight
+   bert_diffusion.encoder.layer.1.attention.self.key.bias
+   bert_diffusion.encoder.layer.1.attention.self.value.weight
+   bert_diffusion.encoder.layer.1.attention.self.value.bias
+   bert_diffusion.encoder.layer.1.attention.output.dense.weight
+   bert_diffusion.encoder.layer.1.attention.output.dense.bias
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.intermediate.dense.weight
+   bert_diffusion.encoder.layer.1.intermediate.dense.bias
+   bert_diffusion.encoder.layer.1.output.dense.weight
+   bert_diffusion.encoder.layer.1.output.dense.bias
+   bert_diffusion.encoder.layer.1.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.attention.self.query.weight
+   bert_diffusion.encoder.layer.2.attention.self.query.bias
+   bert_diffusion.encoder.layer.2.attention.self.key.weight
+   bert_diffusion.encoder.layer.2.attention.self.key.bias
+   bert_diffusion.encoder.layer.2.attention.self.value.weight
+   bert_diffusion.encoder.layer.2.attention.self.value.bias
+   bert_diffusion.encoder.layer.2.attention.output.dense.weight
+   bert_diffusion.encoder.layer.2.attention.output.dense.bias
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.intermediate.dense.weight
+   bert_diffusion.encoder.layer.2.intermediate.dense.bias
+   bert_diffusion.encoder.layer.2.output.dense.weight
+   bert_diffusion.encoder.layer.2.output.dense.bias
+   bert_diffusion.encoder.layer.2.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.attention.self.query.weight
+   bert_diffusion.encoder.layer.3.attention.self.query.bias
+   bert_diffusion.encoder.layer.3.attention.self.key.weight
+   bert_diffusion.encoder.layer.3.attention.self.key.bias
+   bert_diffusion.encoder.layer.3.attention.self.value.weight
+   bert_diffusion.encoder.layer.3.attention.self.value.bias
+   bert_diffusion.encoder.layer.3.attention.output.dense.weight
+   bert_diffusion.encoder.layer.3.attention.output.dense.bias
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.intermediate.dense.weight
+   bert_diffusion.encoder.layer.3.intermediate.dense.bias
+   bert_diffusion.encoder.layer.3.output.dense.weight
+   bert_diffusion.encoder.layer.3.output.dense.bias
+   bert_diffusion.encoder.layer.3.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.attention.self.query.weight
+   bert_diffusion.encoder.layer.4.attention.self.query.bias
+   bert_diffusion.encoder.layer.4.attention.self.key.weight
+   bert_diffusion.encoder.layer.4.attention.self.key.bias
+   bert_diffusion.encoder.layer.4.attention.self.value.weight
+   bert_diffusion.encoder.layer.4.attention.self.value.bias
+   bert_diffusion.encoder.layer.4.attention.output.dense.weight
+   bert_diffusion.encoder.layer.4.attention.output.dense.bias
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.intermediate.dense.weight
+   bert_diffusion.encoder.layer.4.intermediate.dense.bias
+   bert_diffusion.encoder.layer.4.output.dense.weight
+   bert_diffusion.encoder.layer.4.output.dense.bias
+   bert_diffusion.encoder.layer.4.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.attention.self.query.weight
+   bert_diffusion.encoder.layer.5.attention.self.query.bias
+   bert_diffusion.encoder.layer.5.attention.self.key.weight
+   bert_diffusion.encoder.layer.5.attention.self.key.bias
+   bert_diffusion.encoder.layer.5.attention.self.value.weight
+   bert_diffusion.encoder.layer.5.attention.self.value.bias
+   bert_diffusion.encoder.layer.5.attention.output.dense.weight
+   bert_diffusion.encoder.layer.5.attention.output.dense.bias
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.intermediate.dense.weight
+   bert_diffusion.encoder.layer.5.intermediate.dense.bias
+   bert_diffusion.encoder.layer.5.output.dense.weight
+   bert_diffusion.encoder.layer.5.output.dense.bias
+   bert_diffusion.encoder.layer.5.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.attention.self.query.weight
+   bert_diffusion.encoder.layer.6.attention.self.query.bias
+   bert_diffusion.encoder.layer.6.attention.self.key.weight
+   bert_diffusion.encoder.layer.6.attention.self.key.bias
+   bert_diffusion.encoder.layer.6.attention.self.value.weight
+   bert_diffusion.encoder.layer.6.attention.self.value.bias
+   bert_diffusion.encoder.layer.6.attention.output.dense.weight
+   bert_diffusion.encoder.layer.6.attention.output.dense.bias
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.intermediate.dense.weight
+   bert_diffusion.encoder.layer.6.intermediate.dense.bias
+   bert_diffusion.encoder.layer.6.output.dense.weight
+   bert_diffusion.encoder.layer.6.output.dense.bias
+   bert_diffusion.encoder.layer.6.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.attention.self.query.weight
+   bert_diffusion.encoder.layer.7.attention.self.query.bias
+   bert_diffusion.encoder.layer.7.attention.self.key.weight
+   bert_diffusion.encoder.layer.7.attention.self.key.bias
+   bert_diffusion.encoder.layer.7.attention.self.value.weight
+   bert_diffusion.encoder.layer.7.attention.self.value.bias
+   bert_diffusion.encoder.layer.7.attention.output.dense.weight
+   bert_diffusion.encoder.layer.7.attention.output.dense.bias
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.intermediate.dense.weight
+   bert_diffusion.encoder.layer.7.intermediate.dense.bias
+   bert_diffusion.encoder.layer.7.output.dense.weight
+   bert_diffusion.encoder.layer.7.output.dense.bias
+   bert_diffusion.encoder.layer.7.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.attention.self.query.weight
+   bert_diffusion.encoder.layer.8.attention.self.query.bias
+   bert_diffusion.encoder.layer.8.attention.self.key.weight
+   bert_diffusion.encoder.layer.8.attention.self.key.bias
+   bert_diffusion.encoder.layer.8.attention.self.value.weight
+   bert_diffusion.encoder.layer.8.attention.self.value.bias
+   bert_diffusion.encoder.layer.8.attention.output.dense.weight
+   bert_diffusion.encoder.layer.8.attention.output.dense.bias
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.intermediate.dense.weight
+   bert_diffusion.encoder.layer.8.intermediate.dense.bias
+   bert_diffusion.encoder.layer.8.output.dense.weight
+   bert_diffusion.encoder.layer.8.output.dense.bias
+   bert_diffusion.encoder.layer.8.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.attention.self.query.weight
+   bert_diffusion.encoder.layer.9.attention.self.query.bias
+   bert_diffusion.encoder.layer.9.attention.self.key.weight
+   bert_diffusion.encoder.layer.9.attention.self.key.bias
+   bert_diffusion.encoder.layer.9.attention.self.value.weight
+   bert_diffusion.encoder.layer.9.attention.self.value.bias
+   bert_diffusion.encoder.layer.9.attention.output.dense.weight
+   bert_diffusion.encoder.layer.9.attention.output.dense.bias
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.intermediate.dense.weight
+   bert_diffusion.encoder.layer.9.intermediate.dense.bias
+   bert_diffusion.encoder.layer.9.output.dense.weight
+   bert_diffusion.encoder.layer.9.output.dense.bias
+   bert_diffusion.encoder.layer.9.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.attention.self.query.weight
+   bert_diffusion.encoder.layer.10.attention.self.query.bias
+   bert_diffusion.encoder.layer.10.attention.self.key.weight
+   bert_diffusion.encoder.layer.10.attention.self.key.bias
+   bert_diffusion.encoder.layer.10.attention.self.value.weight
+   bert_diffusion.encoder.layer.10.attention.self.value.bias
+   bert_diffusion.encoder.layer.10.attention.output.dense.weight
+   bert_diffusion.encoder.layer.10.attention.output.dense.bias
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.intermediate.dense.weight
+   bert_diffusion.encoder.layer.10.intermediate.dense.bias
+   bert_diffusion.encoder.layer.10.output.dense.weight
+   bert_diffusion.encoder.layer.10.output.dense.bias
+   bert_diffusion.encoder.layer.10.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.attention.self.query.weight
+   bert_diffusion.encoder.layer.11.attention.self.query.bias
+   bert_diffusion.encoder.layer.11.attention.self.key.weight
+   bert_diffusion.encoder.layer.11.attention.self.key.bias
+   bert_diffusion.encoder.layer.11.attention.self.value.weight
+   bert_diffusion.encoder.layer.11.attention.self.value.bias
+   bert_diffusion.encoder.layer.11.attention.output.dense.weight
+   bert_diffusion.encoder.layer.11.attention.output.dense.bias
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.intermediate.dense.weight
+   bert_diffusion.encoder.layer.11.intermediate.dense.bias
+   bert_diffusion.encoder.layer.11.output.dense.weight
+   bert_diffusion.encoder.layer.11.output.dense.bias
+   bert_diffusion.encoder.layer.11.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.output.LayerNorm.bias
+   bert_diffusion.pooler.dense.weight
+   bert_diffusion.pooler.dense.bias
+2026-02-21 19:18:31,414:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 19:18:36,975:INFO: ***** Running val *****
+2026-02-21 19:18:36,975:INFO:   Num examples = 497
+2026-02-21 19:18:36,975:INFO:   Batch size = 128
+2026-02-21 19:18:36,975:INFO:   Num steps = 4
+2026-02-21 19:18:36,975:INFO: ***** Running test *****
+2026-02-21 19:18:36,975:INFO:   Num examples = 2990
+2026-02-21 19:18:36,976:INFO:   Batch size = 128
+2026-02-21 19:18:36,976:INFO:   Num steps = 24
+2026-02-21 19:19:18,393:INFO: >>>  BLEU_1: 0.8602, BLEU_2: 0.7442, BLEU_3: 0.6161, BLEU_4: 0.4936
+2026-02-21 19:19:18,393:INFO: >>>  METEOR: 0.3165, ROUGE_L: 0.6564, CIDEr: 0.6171
+2026-02-21 19:52:23,873:INFO: Effective parameters:
+2026-02-21 19:52:23,874:INFO:   <<< batch_size: 512
+2026-02-21 19:52:23,874:INFO:   <<< batch_size_val: 128
+2026-02-21 19:52:23,874:INFO:   <<< bert_model: bert-base-uncased
+2026-02-21 19:52:23,874:INFO:   <<< cache_dir: 
+2026-02-21 19:52:23,874:INFO:   <<< cluster: True
+2026-02-21 19:52:23,874:INFO:   <<< coef_lr: 0.1
+2026-02-21 19:52:23,874:INFO:   <<< contrast: True
+2026-02-21 19:52:23,874:INFO:   <<< d_model: 512
+2026-02-21 19:52:23,874:INFO:   <<< data_path: ../dataset/MSRVTT/MSRVTT_data.json
+2026-02-21 19:52:23,874:INFO:   <<< datatype: msrvtt
+2026-02-21 19:52:23,874:INFO:   <<< decoder_model: decoder-base
+2026-02-21 19:52:23,874:INFO:   <<< decoder_num_hidden_layers: 2
+2026-02-21 19:52:23,874:INFO:   <<< do_eval: True
+2026-02-21 19:52:23,874:INFO:   <<< do_lower_case: True
+2026-02-21 19:52:23,874:INFO:   <<< do_train: False
+2026-02-21 19:52:23,874:INFO:   <<< epochs: 50
+2026-02-21 19:52:23,874:INFO:   <<< feature_framerate: 1
+2026-02-21 19:52:23,874:INFO:   <<< features_path: ../extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle
+2026-02-21 19:52:23,874:INFO:   <<< fp16: False
+2026-02-21 19:52:23,874:INFO:   <<< fp16_opt_level: O1
+2026-02-21 19:52:23,874:INFO:   <<< gradient_accumulation_steps: 2
+2026-02-21 19:52:23,874:INFO:   <<< hard_negative_rate: 0.5
+2026-02-21 19:52:23,874:INFO:   <<< init_model: /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12
+2026-02-21 19:52:23,874:INFO:   <<< local_rank: 0
+2026-02-21 19:52:23,874:INFO:   <<< lr: 0.0001
+2026-02-21 19:52:23,874:INFO:   <<< lr_decay: 0.9
+2026-02-21 19:52:23,874:INFO:   <<< margin: 0.1
+2026-02-21 19:52:23,874:INFO:   <<< max_frames: 20
+2026-02-21 19:52:23,874:INFO:   <<< max_words: 48
+2026-02-21 19:52:23,874:INFO:   <<< min_time: 5.0
+2026-02-21 19:52:23,874:INFO:   <<< n_display: 50
+2026-02-21 19:52:23,874:INFO:   <<< n_gpu: 1
+2026-02-21 19:52:23,874:INFO:   <<< n_pair: 1
+2026-02-21 19:52:23,874:INFO:   <<< negative_weighting: 1
+2026-02-21 19:52:23,874:INFO:   <<< num_thread_reader: 16
+2026-02-21 19:52:23,874:INFO:   <<< output_dir: ../Result/msrvtt_lr1e-4_eval
+2026-02-21 19:52:23,874:INFO:   <<< patience: 50
+2026-02-21 19:52:23,874:INFO:   <<< patience_metric: CIDEr
+2026-02-21 19:52:23,874:INFO:   <<< prototype: False
+2026-02-21 19:52:23,874:INFO:   <<< sampled_use_mil: False
+2026-02-21 19:52:23,874:INFO:   <<< seed: 42
+2026-02-21 19:52:23,874:INFO:   <<< target_metric: CIDEr
+2026-02-21 19:52:23,874:INFO:   <<< text_num_hidden_layers: 12
+2026-02-21 19:52:23,874:INFO:   <<< use_mil: False
+2026-02-21 19:52:23,874:INFO:   <<< video_dim: 512
+2026-02-21 19:52:23,875:INFO:   <<< video_feat_type: Clip
+2026-02-21 19:52:23,875:INFO:   <<< visual_model: visual-base
+2026-02-21 19:52:23,875:INFO:   <<< visual_num_hidden_layers: 2
+2026-02-21 19:52:23,875:INFO:   <<< warmup_proportion: 0.1
+2026-02-21 19:52:23,875:INFO:   <<< world_size: 1
+2026-02-21 19:52:23,875:INFO: device: cuda:0 n_gpu: 1
+2026-02-21 19:52:23,875:INFO: loading vocabulary file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased/vocab.txt
+2026-02-21 19:52:24,395:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/bert-base-uncased
+2026-02-21 19:52:24,395:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2026-02-21 19:52:24,396:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base
+2026-02-21 19:52:24,396:INFO: Model config {
+  "_comment": "video_feat_type: eg. Clip  Swin Swin+Clip .. ,  max_position_embeddings: (512) (1568) (1588)",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 1,
+  "num_prototype": 512,
+  "prototype": 0,
+  "type_vocab_size": 2,
+  "video_feat_type": "Clip",
+  "vocab_size": 512
+}
+
+2026-02-21 19:52:24,396:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/visual-base/visual_pytorch_model.bin
+2026-02-21 19:52:24,396:INFO: loading archive file /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base
+2026-02-21 19:52:24,396:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "cluster": 1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "t_rate0": 0.25,
+  "t_rate1": 0.5,
+  "type_vocab_size": 2,
+  "v_rate0": 0.25,
+  "v_rate1": 0.5,
+  "vocab_size": 30522
+}
+
+2026-02-21 19:52:24,396:INFO: Weight doesn't exsits. /media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/modules/decoder-base/decoder_pytorch_model.bin
+2026-02-21 19:52:24,396:WARNING: Set bert_config.num_hidden_layers: 12.
+2026-02-21 19:52:24,801:WARNING: Set visual_config.num_hidden_layers: 2.
+2026-02-21 19:52:24,867:WARNING: Set decoder_config.num_decoder_layers: 2.
+2026-02-21 19:52:25,651:INFO: --------------------
+2026-02-21 19:52:25,651:INFO: Weights of CaptionGenerator not initialized from pretrained model: 
+   visual.Mheads.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.weight
+   decoder.decoder2.layer.0.slf_attn.att.query.bias
+   decoder.decoder2.layer.0.slf_attn.att.key.weight
+   decoder.decoder2.layer.0.slf_attn.att.key.bias
+   decoder.decoder2.layer.0.slf_attn.att.value.weight
+   decoder.decoder2.layer.0.slf_attn.att.value.bias
+   decoder.decoder2.layer.0.slf_attn.output.dense.weight
+   decoder.decoder2.layer.0.slf_attn.output.dense.bias
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.0.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.0.intermediate.dense.weight
+   decoder.decoder2.layer.0.intermediate.dense.bias
+   decoder.decoder2.layer.0.output.dense.weight
+   decoder.decoder2.layer.0.output.dense.bias
+   decoder.decoder2.layer.0.output.LayerNorm.weight
+   decoder.decoder2.layer.0.output.LayerNorm.bias
+   decoder.decoder2.layer.1.slf_attn.att.query.weight
+   decoder.decoder2.layer.1.slf_attn.att.query.bias
+   decoder.decoder2.layer.1.slf_attn.att.key.weight
+   decoder.decoder2.layer.1.slf_attn.att.key.bias
+   decoder.decoder2.layer.1.slf_attn.att.value.weight
+   decoder.decoder2.layer.1.slf_attn.att.value.bias
+   decoder.decoder2.layer.1.slf_attn.output.dense.weight
+   decoder.decoder2.layer.1.slf_attn.output.dense.bias
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.weight
+   decoder.decoder2.layer.1.slf_attn.output.LayerNorm.bias
+   decoder.decoder2.layer.1.intermediate.dense.weight
+   decoder.decoder2.layer.1.intermediate.dense.bias
+   decoder.decoder2.layer.1.output.dense.weight
+   decoder.decoder2.layer.1.output.dense.bias
+   decoder.decoder2.layer.1.output.LayerNorm.weight
+   decoder.decoder2.layer.1.output.LayerNorm.bias
+   normalize_video_512.visual_norm2d.weight
+   normalize_video_512.visual_norm2d.bias
+2026-02-21 19:52:25,651:INFO: Weights from pretrained model not used in CaptionGenerator: 
+   word_embedding_weight
+   bert_diffusion.embeddings.word_embeddings.weight
+   bert_diffusion.embeddings.position_embeddings.weight
+   bert_diffusion.embeddings.token_type_embeddings.weight
+   bert_diffusion.embeddings.LayerNorm.weight
+   bert_diffusion.embeddings.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.attention.self.query.weight
+   bert_diffusion.encoder.layer.0.attention.self.query.bias
+   bert_diffusion.encoder.layer.0.attention.self.key.weight
+   bert_diffusion.encoder.layer.0.attention.self.key.bias
+   bert_diffusion.encoder.layer.0.attention.self.value.weight
+   bert_diffusion.encoder.layer.0.attention.self.value.bias
+   bert_diffusion.encoder.layer.0.attention.output.dense.weight
+   bert_diffusion.encoder.layer.0.attention.output.dense.bias
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.0.intermediate.dense.weight
+   bert_diffusion.encoder.layer.0.intermediate.dense.bias
+   bert_diffusion.encoder.layer.0.output.dense.weight
+   bert_diffusion.encoder.layer.0.output.dense.bias
+   bert_diffusion.encoder.layer.0.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.0.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.attention.self.query.weight
+   bert_diffusion.encoder.layer.1.attention.self.query.bias
+   bert_diffusion.encoder.layer.1.attention.self.key.weight
+   bert_diffusion.encoder.layer.1.attention.self.key.bias
+   bert_diffusion.encoder.layer.1.attention.self.value.weight
+   bert_diffusion.encoder.layer.1.attention.self.value.bias
+   bert_diffusion.encoder.layer.1.attention.output.dense.weight
+   bert_diffusion.encoder.layer.1.attention.output.dense.bias
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.1.intermediate.dense.weight
+   bert_diffusion.encoder.layer.1.intermediate.dense.bias
+   bert_diffusion.encoder.layer.1.output.dense.weight
+   bert_diffusion.encoder.layer.1.output.dense.bias
+   bert_diffusion.encoder.layer.1.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.1.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.attention.self.query.weight
+   bert_diffusion.encoder.layer.2.attention.self.query.bias
+   bert_diffusion.encoder.layer.2.attention.self.key.weight
+   bert_diffusion.encoder.layer.2.attention.self.key.bias
+   bert_diffusion.encoder.layer.2.attention.self.value.weight
+   bert_diffusion.encoder.layer.2.attention.self.value.bias
+   bert_diffusion.encoder.layer.2.attention.output.dense.weight
+   bert_diffusion.encoder.layer.2.attention.output.dense.bias
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.2.intermediate.dense.weight
+   bert_diffusion.encoder.layer.2.intermediate.dense.bias
+   bert_diffusion.encoder.layer.2.output.dense.weight
+   bert_diffusion.encoder.layer.2.output.dense.bias
+   bert_diffusion.encoder.layer.2.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.2.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.attention.self.query.weight
+   bert_diffusion.encoder.layer.3.attention.self.query.bias
+   bert_diffusion.encoder.layer.3.attention.self.key.weight
+   bert_diffusion.encoder.layer.3.attention.self.key.bias
+   bert_diffusion.encoder.layer.3.attention.self.value.weight
+   bert_diffusion.encoder.layer.3.attention.self.value.bias
+   bert_diffusion.encoder.layer.3.attention.output.dense.weight
+   bert_diffusion.encoder.layer.3.attention.output.dense.bias
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.3.intermediate.dense.weight
+   bert_diffusion.encoder.layer.3.intermediate.dense.bias
+   bert_diffusion.encoder.layer.3.output.dense.weight
+   bert_diffusion.encoder.layer.3.output.dense.bias
+   bert_diffusion.encoder.layer.3.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.3.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.attention.self.query.weight
+   bert_diffusion.encoder.layer.4.attention.self.query.bias
+   bert_diffusion.encoder.layer.4.attention.self.key.weight
+   bert_diffusion.encoder.layer.4.attention.self.key.bias
+   bert_diffusion.encoder.layer.4.attention.self.value.weight
+   bert_diffusion.encoder.layer.4.attention.self.value.bias
+   bert_diffusion.encoder.layer.4.attention.output.dense.weight
+   bert_diffusion.encoder.layer.4.attention.output.dense.bias
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.4.intermediate.dense.weight
+   bert_diffusion.encoder.layer.4.intermediate.dense.bias
+   bert_diffusion.encoder.layer.4.output.dense.weight
+   bert_diffusion.encoder.layer.4.output.dense.bias
+   bert_diffusion.encoder.layer.4.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.4.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.attention.self.query.weight
+   bert_diffusion.encoder.layer.5.attention.self.query.bias
+   bert_diffusion.encoder.layer.5.attention.self.key.weight
+   bert_diffusion.encoder.layer.5.attention.self.key.bias
+   bert_diffusion.encoder.layer.5.attention.self.value.weight
+   bert_diffusion.encoder.layer.5.attention.self.value.bias
+   bert_diffusion.encoder.layer.5.attention.output.dense.weight
+   bert_diffusion.encoder.layer.5.attention.output.dense.bias
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.5.intermediate.dense.weight
+   bert_diffusion.encoder.layer.5.intermediate.dense.bias
+   bert_diffusion.encoder.layer.5.output.dense.weight
+   bert_diffusion.encoder.layer.5.output.dense.bias
+   bert_diffusion.encoder.layer.5.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.5.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.attention.self.query.weight
+   bert_diffusion.encoder.layer.6.attention.self.query.bias
+   bert_diffusion.encoder.layer.6.attention.self.key.weight
+   bert_diffusion.encoder.layer.6.attention.self.key.bias
+   bert_diffusion.encoder.layer.6.attention.self.value.weight
+   bert_diffusion.encoder.layer.6.attention.self.value.bias
+   bert_diffusion.encoder.layer.6.attention.output.dense.weight
+   bert_diffusion.encoder.layer.6.attention.output.dense.bias
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.6.intermediate.dense.weight
+   bert_diffusion.encoder.layer.6.intermediate.dense.bias
+   bert_diffusion.encoder.layer.6.output.dense.weight
+   bert_diffusion.encoder.layer.6.output.dense.bias
+   bert_diffusion.encoder.layer.6.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.6.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.attention.self.query.weight
+   bert_diffusion.encoder.layer.7.attention.self.query.bias
+   bert_diffusion.encoder.layer.7.attention.self.key.weight
+   bert_diffusion.encoder.layer.7.attention.self.key.bias
+   bert_diffusion.encoder.layer.7.attention.self.value.weight
+   bert_diffusion.encoder.layer.7.attention.self.value.bias
+   bert_diffusion.encoder.layer.7.attention.output.dense.weight
+   bert_diffusion.encoder.layer.7.attention.output.dense.bias
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.7.intermediate.dense.weight
+   bert_diffusion.encoder.layer.7.intermediate.dense.bias
+   bert_diffusion.encoder.layer.7.output.dense.weight
+   bert_diffusion.encoder.layer.7.output.dense.bias
+   bert_diffusion.encoder.layer.7.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.7.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.attention.self.query.weight
+   bert_diffusion.encoder.layer.8.attention.self.query.bias
+   bert_diffusion.encoder.layer.8.attention.self.key.weight
+   bert_diffusion.encoder.layer.8.attention.self.key.bias
+   bert_diffusion.encoder.layer.8.attention.self.value.weight
+   bert_diffusion.encoder.layer.8.attention.self.value.bias
+   bert_diffusion.encoder.layer.8.attention.output.dense.weight
+   bert_diffusion.encoder.layer.8.attention.output.dense.bias
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.8.intermediate.dense.weight
+   bert_diffusion.encoder.layer.8.intermediate.dense.bias
+   bert_diffusion.encoder.layer.8.output.dense.weight
+   bert_diffusion.encoder.layer.8.output.dense.bias
+   bert_diffusion.encoder.layer.8.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.8.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.attention.self.query.weight
+   bert_diffusion.encoder.layer.9.attention.self.query.bias
+   bert_diffusion.encoder.layer.9.attention.self.key.weight
+   bert_diffusion.encoder.layer.9.attention.self.key.bias
+   bert_diffusion.encoder.layer.9.attention.self.value.weight
+   bert_diffusion.encoder.layer.9.attention.self.value.bias
+   bert_diffusion.encoder.layer.9.attention.output.dense.weight
+   bert_diffusion.encoder.layer.9.attention.output.dense.bias
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.9.intermediate.dense.weight
+   bert_diffusion.encoder.layer.9.intermediate.dense.bias
+   bert_diffusion.encoder.layer.9.output.dense.weight
+   bert_diffusion.encoder.layer.9.output.dense.bias
+   bert_diffusion.encoder.layer.9.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.9.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.attention.self.query.weight
+   bert_diffusion.encoder.layer.10.attention.self.query.bias
+   bert_diffusion.encoder.layer.10.attention.self.key.weight
+   bert_diffusion.encoder.layer.10.attention.self.key.bias
+   bert_diffusion.encoder.layer.10.attention.self.value.weight
+   bert_diffusion.encoder.layer.10.attention.self.value.bias
+   bert_diffusion.encoder.layer.10.attention.output.dense.weight
+   bert_diffusion.encoder.layer.10.attention.output.dense.bias
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.10.intermediate.dense.weight
+   bert_diffusion.encoder.layer.10.intermediate.dense.bias
+   bert_diffusion.encoder.layer.10.output.dense.weight
+   bert_diffusion.encoder.layer.10.output.dense.bias
+   bert_diffusion.encoder.layer.10.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.10.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.attention.self.query.weight
+   bert_diffusion.encoder.layer.11.attention.self.query.bias
+   bert_diffusion.encoder.layer.11.attention.self.key.weight
+   bert_diffusion.encoder.layer.11.attention.self.key.bias
+   bert_diffusion.encoder.layer.11.attention.self.value.weight
+   bert_diffusion.encoder.layer.11.attention.self.value.bias
+   bert_diffusion.encoder.layer.11.attention.output.dense.weight
+   bert_diffusion.encoder.layer.11.attention.output.dense.bias
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.attention.output.LayerNorm.bias
+   bert_diffusion.encoder.layer.11.intermediate.dense.weight
+   bert_diffusion.encoder.layer.11.intermediate.dense.bias
+   bert_diffusion.encoder.layer.11.output.dense.weight
+   bert_diffusion.encoder.layer.11.output.dense.bias
+   bert_diffusion.encoder.layer.11.output.LayerNorm.weight
+   bert_diffusion.encoder.layer.11.output.LayerNorm.bias
+   bert_diffusion.pooler.dense.weight
+   bert_diffusion.pooler.dense.bias
+2026-02-21 19:52:25,651:ERROR: Weights from pretrained model cause errors in CaptionGenerator: 
+   size mismatch for decoder.classifier_action.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([201, 768]).
+   size mismatch for decoder.classifier_action.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([201]).
+   size mismatch for decoder.classifier_entity.weight: copying a param with shape torch.Size([30522, 768]) from checkpoint, the shape in current model is torch.Size([401, 768]).
+   size mismatch for decoder.classifier_entity.bias: copying a param with shape torch.Size([30522]) from checkpoint, the shape in current model is torch.Size([401]).
+2026-02-21 19:52:31,285:INFO: ***** Running val *****
+2026-02-21 19:52:31,285:INFO:   Num examples = 497
+2026-02-21 19:52:31,286:INFO:   Batch size = 128
+2026-02-21 19:52:31,286:INFO:   Num steps = 4
+2026-02-21 19:52:31,286:INFO: ***** Running test *****
+2026-02-21 19:52:31,286:INFO:   Num examples = 2990
+2026-02-21 19:52:31,286:INFO:   Batch size = 128
+2026-02-21 19:52:31,286:INFO:   Num steps = 24
+2026-02-21 19:53:13,920:INFO: >>>  BLEU_1: 0.8602, BLEU_2: 0.7442, BLEU_3: 0.6161, BLEU_4: 0.4936
+2026-02-21 19:53:13,921:INFO: >>>  METEOR: 0.3165, ROUGE_L: 0.6564, CIDEr: 0.6171

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6758a97f-5564-47bb-8d8f-017cb6e69e5e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ckpts/msrvtt_lr7e-6/VIT-B-32.pt111.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckpts/msvd_lr7e-6/VIT-B-32.pt111.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extracted_feats/msrvtt/MSRVTT_CLIP4Clip_features.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extracted_feats/msvd/MSVD_CLIP4Clip_features.pickle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dqf5Fd6MpsGYCtDZ17L1Ij5Q8f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.metrics_MSRVTT&amp;MSVD_hyp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.metrics_MSRVTT&amp;MSVD_hyp_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.metrics_MSVD_hyp_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualization_loss.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualization_score.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/alocus/4A984F62984F4C1F/Users/Alocus/Desktop/视频字幕/UHCL/ckpts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ckpts" />
+      <recent name="$PROJECT_DIR$/extracted_feats/msrvtt" />
+      <recent name="$PROJECT_DIR$/dataset/MSRVTT" />
+      <recent name="$PROJECT_DIR$/dataset/MSVD" />
+      <recent name="$PROJECT_DIR$/extracted_feats/msvd" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Result" />
+      <recent name="$PROJECT_DIR$/extracted_feats" />
+      <recent name="$PROJECT_DIR$/extracted_feats_zyh/zyh" />
+      <recent name="$PROJECT_DIR$/feature_extractor/dataloaders" />
+      <recent name="$PROJECT_DIR$/metrics_hyp/mamba/msrvtt_lr7e-6-27_eval" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.metrics_MSVD_hyp_test">
+    <configuration name="metrics_MSRVTT&amp;MSVD2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Clip4Caption_my" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/metrics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/metrics/metrics_MSRVTT&amp;MSVD2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="metrics_MSRVTT&amp;MSVD_hyp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Clip4Caption_my" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/metrics_hyp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/metrics_hyp/metrics_MSRVTT&amp;MSVD_hyp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="metrics_MSVD_hyp_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Clip4Caption_my" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/metrics_hyp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/metrics_hyp/metrics_MSVD_hyp_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="visualization_loss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Clip4Caption_my" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualization_loss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="visualization_score" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Clip4Caption_my" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualization_score.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.metrics_MSVD_hyp_test" />
+        <item itemvalue="Python.metrics_MSRVTT&amp;MSVD_hyp (1)" />
+        <item itemvalue="Python.visualization_loss" />
+        <item itemvalue="Python.visualization_score" />
+        <item itemvalue="Python.metrics_MSRVTT&amp;MSVD2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6758a97f-5564-47bb-8d8f-017cb6e69e5e" name="Changes" comment="" />
+      <created>1710740344059</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710740344059</updated>
+      <workItem from="1710740345173" duration="140353000" />
+      <workItem from="1712027918638" duration="26373000" />
+      <workItem from="1712564437402" duration="31791000" />
+      <workItem from="1713764051394" duration="48605000" />
+      <workItem from="1714997587503" duration="31918000" />
+      <workItem from="1715090013519" duration="45080000" />
+      <workItem from="1715598983927" duration="201195000" />
+      <workItem from="1717681018951" duration="652000" />
+      <workItem from="1718330140430" duration="4199000" />
+      <workItem from="1718335337971" duration="352000" />
+      <workItem from="1718336556533" duration="89267000" />
+      <workItem from="1719734784752" duration="167937000" />
+      <workItem from="1723140679542" duration="1592000" />
+      <workItem from="1723343954177" duration="5312000" />
+      <workItem from="1723948541881" duration="11527000" />
+      <workItem from="1725123903083" duration="15278000" />
+      <workItem from="1726119797241" duration="540000" />
+      <workItem from="1726130295550" duration="2386000" />
+      <workItem from="1726747800298" duration="25852000" />
+      <workItem from="1727650675058" duration="37762000" />
+      <workItem from="1728350861197" duration="3389000" />
+      <workItem from="1728894517576" duration="28000" />
+      <workItem from="1728922895855" duration="38984000" />
+      <workItem from="1729042713675" duration="3007000" />
+      <workItem from="1729192017173" duration="49000" />
+      <workItem from="1729192779920" duration="154000" />
+      <workItem from="1729192961767" duration="13000" />
+      <workItem from="1729192983297" duration="16000" />
+      <workItem from="1732610199856" duration="6674000" />
+      <workItem from="1732735447817" duration="1203000" />
+      <workItem from="1732928635963" duration="46000" />
+      <workItem from="1733212025522" duration="17000" />
+      <workItem from="1733256560321" duration="9000" />
+      <workItem from="1733295255829" duration="1246000" />
+      <workItem from="1733497501235" duration="19000" />
+      <workItem from="1733677064191" duration="613000" />
+      <workItem from="1733727774003" duration="160000" />
+      <workItem from="1733814271405" duration="19000" />
+      <workItem from="1734058410664" duration="1078000" />
+      <workItem from="1734263433212" duration="14000" />
+      <workItem from="1734484575074" duration="610000" />
+      <workItem from="1734625981360" duration="599000" />
+      <workItem from="1734715132783" duration="12000" />
+      <workItem from="1735925455240" duration="599000" />
+      <workItem from="1739477226329" duration="649000" />
+      <workItem from="1741092061596" duration="1817000" />
+      <workItem from="1748568493767" duration="2252000" />
+      <workItem from="1753148608954" duration="5597000" />
+      <workItem from="1753339497991" duration="15247000" />
+      <workItem from="1753750768186" duration="570000" />
+      <workItem from="1753793633040" duration="642000" />
+      <workItem from="1753796901700" duration="616000" />
+      <workItem from="1753896979405" duration="6101000" />
+      <workItem from="1753955044385" duration="14134000" />
+      <workItem from="1754238776539" duration="4714000" />
+      <workItem from="1754496289679" duration="4637000" />
+      <workItem from="1756457338914" duration="19797000" />
+      <workItem from="1757159970126" duration="9158000" />
+      <workItem from="1757382259491" duration="561000" />
+      <workItem from="1757494214518" duration="5000" />
+      <workItem from="1757555656341" duration="3000" />
+      <workItem from="1757672827682" duration="74000" />
+      <workItem from="1758731044989" duration="2796000" />
+      <workItem from="1760083679661" duration="4000" />
+      <workItem from="1761218990848" duration="979000" />
+      <workItem from="1761226424224" duration="524000" />
+      <workItem from="1761269030730" duration="524000" />
+      <workItem from="1761272612846" duration="31000" />
+      <workItem from="1761827851306" duration="44000" />
+      <workItem from="1765357843889" duration="1377000" />
+      <workItem from="1765685175890" duration="2084000" />
+      <workItem from="1769056995634" duration="11699000" />
+      <workItem from="1769244074528" duration="4205000" />
+      <workItem from="1771669007321" duration="5607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/module_visual.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/optimization.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$add_retieval.coverage" NAME="add_retieval Coverage Results" MODIFIED="1712822093989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix_msvd.coverage" NAME="mix_msvd Coverage Results" MODIFIED="1712823559520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSVD_hyp_test.coverage" NAME="metrics_MSVD_hyp_test Coverage Results" MODIFIED="1769246860613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics_hyp" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSRVTT_MSVD.coverage" NAME="metrics_MSRVTT&amp;MSVD Coverage Results" MODIFIED="1732610280689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics.coverage" NAME="metrics_MSRVTT Coverage Results" MODIFIED="1712716385334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix__3_.coverage" NAME="mix (3) Coverage Results" MODIFIED="1711462992446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result/msvd_result_test_lr_7e-6_50" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix.coverage" NAME="mix Coverage Results" MODIFIED="1711462946311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result/msrvtt_result_test_lr1e-4_3" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$visualization_tsne_3d.coverage" NAME="visualization_tsne_3d Coverage Results" MODIFIED="1715327151742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$cluster.coverage" NAME="cluster Coverage Results" MODIFIED="1715393046948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSRVTT_MSVD2.coverage" NAME="metrics_MSRVTT&amp;MSVD2 Coverage Results" MODIFIED="1732622168601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$visualization_histplot.coverage" NAME="visualization_histplotdemo Coverage Results" MODIFIED="1715328710088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$1.coverage" NAME="1 Coverage Results" MODIFIED="1722147771481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$visualization_3ddemo.coverage" NAME="visualization_3ddemo Coverage Results" MODIFIED="1715327389791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$ttttt.coverage" NAME="ttttt Coverage Results" MODIFIED="1715247234407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix__1_.coverage" NAME="mix (1) Coverage Results" MODIFIED="1711462964647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result/msrvtt_result_train_lr1e-4__3" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$visualization_score.coverage" NAME="visualization_score 覆盖结果" MODIFIED="1748572165445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSRVTT_MSVD_hyp__1_.coverage" NAME="metrics_MSRVTT&amp;MSVD_hyp (1) Coverage Results" MODIFIED="1769057656293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics_hyp" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix_msrvtt.coverage" NAME="mix_msrvtt Coverage Results" MODIFIED="1712825409758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$visualization_loss.coverage" NAME="visualization_loss Coverage Results" MODIFIED="1765693469655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$msrvtt.coverage" NAME="数据集msrvtt文本预览 Coverage Results" MODIFIED="1715563213231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSRVTT_MSVD_hyp.coverage" NAME="metrics_MSRVTT&amp;MSVD_hyp Coverage Results" MODIFIED="1727233628616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$tokenizer_nv.coverage" NAME="tokenizer_nv Coverage Results" MODIFIED="1722151760949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset/MSRVTT" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix__4_.coverage" NAME="mix (4) Coverage Results" MODIFIED="1711463001143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result/msvd_result_train_lr_7e-6_50" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSRVTT_MSVD_hyp_test.coverage" NAME="metrics_MSVD_hyp_test Coverage Results" MODIFIED="1769070853627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics_hyp" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$extract_vocab__1_.coverage" NAME="extract_vocab (1) Coverage Results" MODIFIED="1722148736031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset/MSRVTT" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix__5_.coverage" NAME="mix (5) Coverage Results" MODIFIED="1711463012183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result/msvd_result_val_7e-6_50" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$dataloader_msvd_feats.coverage" NAME="dataloader_msvd_feats Coverage Results" MODIFIED="1722150284556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataloaders" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$metrics_MSVD.coverage" NAME="metrics_MSRVTT&amp;MSVD Coverage Results" MODIFIED="1712808232186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/metrics" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$mix__2_.coverage" NAME="mix (2) Coverage Results" MODIFIED="1711462980887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ckpts_result/msrvtt_result_val_lr1e-4_3" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$visualization_tsne.coverage" NAME="visualization_tsne Coverage Results" MODIFIED="1715007723155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$msvd.coverage" NAME="数据集msvd视频文本预览 Coverage Results" MODIFIED="1723949744409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clip4Caption_my$area.coverage" NAME="area Coverage Results" MODIFIED="1715008498722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
