@@ -35,7 +35,7 @@ mkdir -p ./weight
 wget -P ./weight https://github.com/microsoft/UniVL/releases/download/v0/univl.pretrained.bin
 ```
 
-Download the pretrained weights of our UHCL and extracted data features following [CLIP4Caption reproduction](https://github.com/Sejong-VLI/V2T-CLIP4Caption-Reproduction). Place the files into the corresponding folders, and then you can start training and inference.
+Download the pretrained weights of our UHCL and extracted data features following [CLIP4Caption reproduction](https://github.com/Sejong-VLI/V2T-CLIP4Caption-Reproduction). Place the files into the corresponding folders, and then you can start training and inference:
 
 ```bash
 Link: https://pan.baidu.com/s/13MliRc4gIlOSpyPlZcOo4w?pwd=UHCL
