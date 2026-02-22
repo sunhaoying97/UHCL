@@ -83,7 +83,7 @@ bash eval_msrvtt.sh
 
 
 ## 🤝  References
-This repository is implemented based on the [CLIP4Caption reproduction](https://github.com/Sejong-VLI/V2T-CLIP4Caption-Reproduction),  [UniVL](https://github.com/microsoft/UniVL) and [CLIP4Clip](https://github.com/ArrowLuo/CLIP4Clip)
+This repository is implemented based on the [CLIP4Caption reproduction](https://github.com/Sejong-VLI/V2T-CLIP4Caption-Reproduction), [Chat-UniVi](https://github.com/PKU-YuanGroup/Chat-UniVi),  [UniVL](https://github.com/microsoft/UniVL) and [CLIP4Clip](https://github.com/ArrowLuo/CLIP4Clip)
 
 <h1 style="color:red;">Original CLIP4Caption Notes</h1>
 # Reproducing CLIP4Caption
