@@ -1,6 +1,6 @@
 # UHCL: Unified Hierarchical Contrastive Learning for Video Caption
 
-🎉 This repository is the official implementation of the paper **"Unified Hierarchical Contrastive Learning for Video Caption"**. The paper has now been accepted by the JCR Q1 and SCI Q1 journal Information Fusion.
+🎉 This repository is the official implementation of the paper **"Unified Hierarchical Contrastive Learning for Video Caption"**. The paper has now been accepted by the JCR Q1 and SCI Q1 journal **"Information Fusion"**.
 
 ✨ The proposed method enhances the quality and distinctiveness of video caption generation through a unified hierarchical contrastive learning framework, without introducing additional inference overhead.
 
