@@ -74,7 +74,6 @@ bash eval_msrvtt.sh
 
 <p align="center">
   <em> Thanks for visiting ✨ UHCL!</em><br><br>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.nanobot&style=for-the-badge&color=00d4ff" alt="Views">
 </p>
 
 
