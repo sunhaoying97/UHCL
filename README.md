@@ -1,10 +1,10 @@
 # UHCL: Unified Hierarchical Contrastive Learning for Video Caption
 
-This repository is the official implementation of the paper **"Unified Hierarchical Contrastive Learning for Video Caption"**. 
+🎉 This repository is the official implementation of the paper **"Unified Hierarchical Contrastive Learning for Video Caption"**. The paper has now been accepted by the JCR Q1 and SCI Q1 journal Information Fusion.
 
-The proposed method enhances the quality and distinctiveness of video caption generation through a unified hierarchical contrastive learning framework, without introducing additional inference overhead.
+✨ The proposed method enhances the quality and distinctiveness of video caption generation through a unified hierarchical contrastive learning framework, without introducing additional inference overhead.
 
-## Setup
+## 🔧 Setup
 Execute below scripts in the main folder, to avoid a download conflict when doing distributed pretraining.
 
 ```bash
@@ -47,7 +47,7 @@ https://www.alipan.com/s/9XXq8RwiZ9S
 code: 98ub
 ```
 
-## Training & Evaluation
+## 🚀 Training & Evaluation
 You may need to modify the corresponding scripts as per your needs.
 ```bash
 cd scripts
