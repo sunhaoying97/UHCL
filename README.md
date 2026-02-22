@@ -60,7 +60,30 @@ bash train_msrvtt.sh
 bash eval_msrvtt.sh
 ```
 
-## References
+## ⭐ Star History
+
+<div align="center">
+  <a href="https://api.star-history.com/svg?repos=sunhaoying97/UHCL&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sunhaoying97/UHCL&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sunhaoying97/UHCL&type=Date" />
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sunhaoying97/UHCL&type=Date" style="border-radius: 15px; box-shadow: 0 0 30px rgba(0, 217, 255, 0.3);" />
+    </picture>
+  </a>
+</div>
+
+<p align="center">
+  <em> Thanks for visiting ✨ UHCL!</em><br><br>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.nanobot&style=for-the-badge&color=00d4ff" alt="Views">
+</p>
+
+
+<p align="center">
+  <sub>UHCL is for educational, research, and technical exchange purposes only</sub>
+</p>
+
+
+## 🤝  References
 This repository is implemented based on the [CLIP4Caption reproduction](https://github.com/Sejong-VLI/V2T-CLIP4Caption-Reproduction),  [UniVL](https://github.com/microsoft/UniVL) and [CLIP4Clip](https://github.com/ArrowLuo/CLIP4Clip)
 
 <h1 style="color:red;">Original CLIP4Caption Notes</h1>
