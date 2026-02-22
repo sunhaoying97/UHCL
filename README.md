@@ -36,6 +36,11 @@ wget -P ./weight https://github.com/microsoft/UniVL/releases/download/v0/univl.p
 ```
 
 Download the pretrained weights of our UHCL and extracted data features following [CLIP4Caption reproduction](https://github.com/Sejong-VLI/V2T-CLIP4Caption-Reproduction). Place the files into the corresponding folders, and then you can start training and inference.
+
+```bash
+链接: https://pan.baidu.com/s/13MliRc4gIlOSpyPlZcOo4w?pwd=UHCL 提取码: UHCL
+```
+or 
 ```bash
 https://www.alipan.com/s/9XXq8RwiZ9S
 code: 98ub
